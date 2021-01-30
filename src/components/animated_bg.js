@@ -20,7 +20,7 @@ function AnimatedBg() {
       options={{
         background: {
           color: {
-            value: "#000000",
+            value: "#1f1f1f",
           },
         },
         fpsLimit: 60,

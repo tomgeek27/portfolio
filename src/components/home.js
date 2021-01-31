@@ -8,7 +8,7 @@ function Home() {
     <BreakpointProvider>
       <div>
         <AnimatedBg />
-        <PageTop/>
+        <PageTop />
       </div>
     </BreakpointProvider>
   );

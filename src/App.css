@@ -2,37 +2,119 @@
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+  font-family: 'CoolveticaRg';
+  src: url(./fonts/coolveticarg.ttf);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'ocr';
+  src: url(./fonts/OCRAStd.otf);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-title {
+  color: #707070;
+  font-weight: normal;
+  font-size: 65px;
+  font-family: 'CoolveticaRg';
+  text-align: center;
+}
+
+.main-subtitle {
+  color: #707070;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: 'CoolveticaRg';
+  text-align: center;
+}
+
+.main-subsubtitle {
+  color: #707070;
+  font-weight: normal;
+  font-size: 16px;
+  font-family: 'ocr';
+  text-align: center;
+}
+
+.semicenter {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#imgprofile {
+  border: 1px solid #707070;
+}
+
+.center-vertical {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.secondary-title {
+  color: #707070;
+  font-weight: normal;
+  font-size: 40px;
+  font-family: 'CoolveticaRg';
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.content {
+  color: #707070;
+  font-weight: normal;
+  font-size: min(1.7vmax 20px);
+  font-family: 'CoolveticaRg';
+  text-align: left;
+}
+
+.detail-key {
+  color: #707070;
+  font-weight: normal;
+  font-size: min(1.7vmax, 20px);
+  font-family: 'CoolveticaRg';
+  text-align: left;
+}
+
+.detail-value {
+  color: #707070;
+  font-weight: normal;
+  font-size: min(1.7vmax, 20px);
+  font-family: 'CoolveticaRg';
+  text-align: left;
+  opacity: 0.61;
+}
+
+.social-icon {
+  height: 33px;
+  width:  33px;
+}
+
+.top60 {
+  margin-top: 3vh;
+}
+
+.bottom45 {
+  padding-bottom: 45px;
+}
+
+.bottom13 {
+  margin-bottom: 13px;
+}
+
+.text-left {
+  text-align: left;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.right {
+  float: right;
+}
+
+.left {
+  float: left;
 }

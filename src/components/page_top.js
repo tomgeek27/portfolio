@@ -4,7 +4,7 @@ import SocialButton from './social_button'
 import ghlogo from '../assets/imgs/github.svg'
 import inlogo from '../assets/imgs/linkedin.svg'
 import uplogo from '../assets/imgs/upwork.svg'
-import {gh_url, in_url, up_url} from '../constants/social_url'
+import { gh_url, in_url, up_url } from '../constants/social_url'
 
 function PageTop() {
   return (
@@ -17,17 +17,14 @@ function PageTop() {
         flex: 4
       }}>
       </div>
-      <div style={{
-        flex: 3,
-        display: 'flex',
-        alignItems: 'center',
-        justifyContent: 'center',
-        flexDirection: 'column',
-      }}>
-        <div class="container" style={{
-                      display: 'flex',
-                      justifyContent: 'center',
-                      flexDirection: 'column',margin: '50px 0'}}>
+      <div 
+        class="flex-column vertical-center horizontal-center"
+        style={{
+          flex: 3,
+        }}>
+        <div class="container flex-column vertical-center" style={{
+          margin: '50px 0'
+        }}>
           <h1 className="main-title">
             Tommaso Amadori
           </h1>
@@ -36,26 +33,17 @@ function PageTop() {
           </span>
         </div>
       </div>
-      <div style={{
+      <div class="flex-column vertical-center" style={{
         flex: 4,
-        display: 'flex',
-        justifyContent: 'center',
-        flexDirection: 'column',
         backgroundColor: 'white'
       }}>
-        <div class="container"
+        <div 
+          class="container flex-column vertical-center horizontal-center"
           style={{
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
             marginTop: '20px',
             marginBottom: '30px'
           }}>
-          <div style={{
-            display: 'flex',
-            justifyContent: 'center'
-          }}>
+          <div className="flex-row vertical-center">
             <div style={{
               flex: 3,
               flexDirection: 'column',
@@ -65,7 +53,7 @@ function PageTop() {
                 About me
             </h2>
               <div class="content text-left">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
             </div>
             </div>
             <div style={{
@@ -132,7 +120,7 @@ function PageTop() {
         minHeight: '30px'
       }}>
 
-      </div>  
+      </div>
     </div>
   )
 }

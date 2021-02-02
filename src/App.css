@@ -91,6 +91,23 @@
   width:  38px;
 }
 
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-center {
+  justify-content: center;
+}
+
+.horizontal-center {
+  align-items: center;
+}
 .top60 {
   margin-top: 3vh;
 }

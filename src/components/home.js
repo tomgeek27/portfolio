@@ -1,6 +1,7 @@
 import React from 'react'
 import AnimatedBg from './animated_bg'
 import PageTop from './page_top'
+import Experiences from './experiences'
 import { Breakpoint, BreakpointProvider } from 'react-socks';
 import me from '../assets/imgs/me.jpg'
 import SocialButton from './social_button'
@@ -12,9 +13,9 @@ function Home() {
   return (
     <BreakpointProvider>
       <div>
-      <AnimatedBg />
-        
+        <AnimatedBg />
         <PageTop />
+        <Experiences />
       </div>
     </BreakpointProvider>
   );

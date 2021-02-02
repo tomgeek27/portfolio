@@ -128,7 +128,8 @@ function PageTop() {
 
       </div>
       <div style={{
-        flex: 1
+        flex: 1,
+        minHeight: '30px'
       }}>
 
       </div>  

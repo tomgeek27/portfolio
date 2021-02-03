@@ -12,8 +12,23 @@ function Projects() {
       <div class="flex-column center-vertical features top27">
         Projects
       </div>
-      <div class="top63 container bottom40">
+      <div class="top43 container bottom40">
         <ProjectGrid projects={[
+          {
+            title: 'Ritm-U',
+            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+            src: ghlogo
+          },
+          {
+            title: 'Ritm-U',
+            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+            src: ghlogo
+          },
+          {
+            title: 'Ritm-U',
+            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+            src: ghlogo
+          },
           {
             title: 'Ritm-U',
             subtitle: 'Applicazione Android/iOS per il controllo del respiro',

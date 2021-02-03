@@ -8,11 +8,11 @@ import { gh_url, in_url, up_url } from '../constants/social_url'
 
 function PageTop() {
   return (
-    <div style={{
-      height: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-    }}>
+    <div 
+      className="flex-column"
+      style={{
+        minHeight: '100vh',
+      }}>
       <div style={{
         flex: 4
       }}>
@@ -121,6 +121,7 @@ function PageTop() {
 
       </div>
     </div>
+
   )
 }
 

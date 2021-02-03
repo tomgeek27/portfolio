@@ -1,7 +1,8 @@
 import React from 'react'
 import AnimatedBg from './animated_bg'
+import Project from './project'
 import PageTop from './page_top'
-import Experiences from './projects'
+import Projects from './projects'
 import { Breakpoint, BreakpointProvider } from 'react-socks';
 import me from '../assets/imgs/me.jpg'
 import SocialButton from './social_button'
@@ -12,11 +13,10 @@ import { gh_url, in_url, up_url } from '../constants/social_url'
 function Home() {
   return (
     <BreakpointProvider>
-      <div>
         <AnimatedBg />
         <PageTop />
-        <Experiences />
-      </div>
+        <Projects />
+        
     </BreakpointProvider>
   );
 }

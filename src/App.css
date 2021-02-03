@@ -1,194 +1,260 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
 
 @font-face {
-  font-family: 'CoolveticaRg';
-  src: url(./fonts/coolveticarg.ttf);
+    font-family: 'CoolveticaRg';
+    src: url(./fonts/coolveticarg.ttf);
 }
 
 @font-face {
-  font-family: 'ocr';
-  src: url(./fonts/OCRAStd.otf);
+    font-family: 'ocr';
+    src: url(./fonts/OCRAStd.otf);
 }
 
 .main-title {
-  color: #707070;
-  font-weight: normal;
-  font-size: 65px;
-  font-family: 'CoolveticaRg';
-  text-align: center;
+    color: #707070;
+    font-weight: normal;
+    font-size: 65px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
 }
 
 .main-subtitle {
-  color: #707070;
-  font-weight: normal;
-  font-size: 40px;
-  font-family: 'CoolveticaRg';
-  text-align: center;
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
 }
 
 .main-subsubtitle {
-  color: #707070;
-  font-weight: normal;
-  font-size: 16px;
-  font-family: 'ocr';
-  text-align: center;
+    color: #707070;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'ocr';
+    text-align: center;
 }
 
 .features {
-  color: #707070;
-  font-family: 'CoolveticaRg';
-  font-size: 55px;
-  text-align: center;
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 55px;
+    text-align: center;
 }
 
 .semicenter {
-  position: absolute;
-  top: 40%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }
 
 #imgprofile {
-  border: 1px solid #707070;
+    border: 1px solid #707070;
+}
+
+#location {
+    width: 14.9px;
+    height: 20.3px;
+    margin-right: 10px;
 }
 
 .center-vertical {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
 
 .secondary-title {
-  color: #707070;
-  font-weight: normal;
-  font-size: 40px;
-  font-family: 'CoolveticaRg';
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
 }
 
 .content {
-  color: #707070;
-  font-weight: normal;
-  font-size: min(1.7vmax 20px);
-  font-family: 'CoolveticaRg';
-  text-align: left;
+    color: #707070;
+    font-weight: normal;
+    font-size: min(1.7vmax 20px);
+    font-family: 'CoolveticaRg';
+    text-align: left;
 }
 
 .detail-key {
-  color: #707070;
-  font-weight: normal;
-  font-size: min(1.7vmax, 20px);
-  font-family: 'CoolveticaRg';
-  text-align: left;
+    color: #707070;
+    font-weight: normal;
+    font-size: min(1.7vmax, 20px);
+    font-family: 'CoolveticaRg';
+    text-align: left;
 }
 
 .detail-value {
-  color: #707070;
-  font-weight: normal;
-  font-size: min(1.7vmax, 20px);
-  font-family: 'CoolveticaRg';
-  text-align: left;
-  opacity: 0.61;
+    color: #707070;
+    font-weight: normal;
+    font-size: min(1.7vmax, 20px);
+    font-family: 'CoolveticaRg';
+    text-align: left;
+    opacity: 0.61;
 }
 
 .social-icon {
-  height: 38px;
-  width:  38px;
+    height: 38px;
+    width: 38px;
 }
 
 .flex-column {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
 }
 
 .flex-row {
-  display: flex;
-  flex-direction: row;
+    display: flex;
+    flex-direction: row;
 }
 
 .vertical-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .horizontal-center {
-  align-items: center;
+    align-items: center;
 }
 
 .top27 {
-  padding-top: 27px;
+    padding-top: 27px;
 }
 
 .top63 {
-  padding-top: 63px;
+    padding-top: 63px;
 }
 
 .bottom40 {
-  padding-bottom: 40px;
+    padding-bottom: 40px;
 }
 
 .project {
-  width: 330px;
-  height: 330px;
-  border-radius: 8px;
-  border: 0.5px solid rgba(112, 112, 112, 0.53);
+    width: 330px;
+    height: 330px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(112, 112, 112, 0.53);
 }
 
 .title-project {
-  font-size: 28px;
-  font-family: 'CoolveticaRg';
-  color: #707070;
-  text-align: center;
+    font-size: 28px;
+    font-family: 'CoolveticaRg';
+    color: #707070;
+    text-align: center;
 }
 
 .subtitle-project {
-  font-size: 16px;
-  font-family: 'Open Sans', sans-serif;
-  color: #707070;
-  text-align: center;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    text-align: center;
+}
+
+.exp-title {
+    font-size: 42px;
+    font-family: 'CoolveticaRg';
+    color: #343434;
+    text-align: left;
 }
 
 .margin43h {
-  margin: 0px 43px;
+    margin: 0px 43px;
 }
 
 .margin17 {
-  margin: 17px 17px;
+    margin: 17px 17px;
 }
 
 .margin23top {
-  margin-top: 23px;
+    margin-top: 23px;
 }
 
 .margin5top {
-  margin-top: 5px;
+    margin-top: 5px;
+}
+
+.margin27top {
+    margin-top: 27px;
+}
+
+.margin50top {
+    margin-top: 50px;
 }
 
 .top43 {
-  margin-top: 43px;
+    margin-top: 43px;
 }
 
 .bottom45 {
-  padding-bottom: 45px;
+    padding-bottom: 45px;
 }
 
 .bottom13 {
-  margin-bottom: 13px;
+    margin-bottom: 13px;
 }
 
 .text-left {
-  text-align: left;
+    text-align: left;
 }
 
 .text-right {
-  text-align: right;
+    text-align: right;
 }
 
 .right {
-  float: right;
+    float: right;
 }
 
 .left {
-  float: left;
+    float: left;
+}
+
+.vertical-timeline.custom-line::before {
+    background-color: #343434;
+}
+
+.vertical-timeline.custom-line {
+    padding: 2em 0 0 0;
+}
+
+.vertical-timeline.custom-line .custom-icon .vertical-timeline-element-icon {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 7px;
+    box-shadow: inset 0px 0px 0px 4px #323232, 0px 0px 7px 4px white;
+    border: 4px solid white;
+}
+
+.vertical-timeline.custom-line .custom-container .vertical-timeline-element-content {
+    box-shadow: none;
+    padding-top: 5px;
+}
+
+.exp-title-element {
+    font-family: 'CoolveticaRg';
+    font-size: 32px;
+    text-align: left;
+    color: #707070;
+}
+
+.exp-location-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18;
+    text-align: left;
+    color: #47b5ff;
+    margin-bottom: 5px;
+}
+
+.exp-description-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20;
+    text-align: left;
+    color: #707070;
 }

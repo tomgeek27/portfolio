@@ -8,38 +8,25 @@ function Projects() {
       width: '100%',
       backgroundColor: 'white'
     }}>
-      {/* Titolo experiences */}
-      <div class="flex-column center-vertical features top27">
-        Projects
-      </div>
-      <div class="top43 container bottom40">
-        <ProjectGrid projects={[
-          {
-            title: 'Ritm-U',
-            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ritmu
-          },
-          {
-            title: 'Ritm-U',
-            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ritmu
-          },
-          {
-            title: 'Ritm-U',
-            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ritmu
-          },
-          {
-            title: 'Ritm-U',
-            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ritmu
-          },
-          {
-            title: 'Ritm-U',
-            subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ritmu
-          },
-        ]}/>
+      <div class="container">
+        <div class="flex-column center-vertical features top27">
+          Projects
+        </div>
+        <div class="top43 container bottom40">
+          <ProjectGrid projects={[
+            {
+              title: 'Ritm-U',
+              subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+              src: ritmu
+            },
+            {
+              title: 'Ritm-U',
+              subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+              src: ritmu
+            },
+          ]}/>
+        </div>
+
       </div>
     </div>
   )

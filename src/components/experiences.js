@@ -48,7 +48,7 @@ function Experiences(props) {
             )
           }
         </VerticalTimeline>
-        <div style={{minHeight: '190px'}}/>
+        <div style={{minHeight: '150px'}}/>
       </div>
     </div>
   );

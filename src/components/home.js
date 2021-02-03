@@ -4,6 +4,7 @@ import Project from './project'
 import PageTop from './page_top'
 import Projects from './projects'
 import Experiences from './experiences'
+import Contacts from './contacts'
 import { Breakpoint, BreakpointProvider } from 'react-socks';
 import me from '../assets/imgs/me.jpg'
 import SocialButton from './social_button'
@@ -44,6 +45,7 @@ function Home() {
           description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
         }
       ]}/>
+      <Contacts />
     </BreakpointProvider>
   );
 }

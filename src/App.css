@@ -258,3 +258,11 @@
     text-align: left;
     color: #707070;
 }
+
+.contacts-title {
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 41px;
+}

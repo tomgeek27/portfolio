@@ -36,6 +36,13 @@
   text-align: center;
 }
 
+.features {
+  color: #707070;
+  font-family: 'CoolveticaRg';
+  font-size: 55px;
+  text-align: center;
+}
+
 .semicenter {
   position: absolute;
   top: 40%;
@@ -108,6 +115,56 @@
 .horizontal-center {
   align-items: center;
 }
+
+.top27 {
+  padding-top: 27px;
+}
+
+.top63 {
+  padding-top: 63px;
+}
+
+.bottom40 {
+  padding-bottom: 40px;
+}
+
+.project {
+  width: 330px;
+  height: 330px;
+  border-radius: 8px;
+  border: 0.5px solid rgba(112, 112, 112, 0.53);
+}
+
+.title-project {
+  font-size: 28px;
+  font-family: 'CoolveticaRg';
+  color: #707070;
+  text-align: center;
+}
+
+.subtitle-project {
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  color: #707070;
+  text-align: center;
+}
+
+.margin43h {
+  margin: 0px 43px;
+}
+
+.margin17 {
+  margin: 17px 17px;
+}
+
+.margin23top {
+  margin-top: 23px;
+}
+
+.margin5top {
+  margin-top: 5px;
+}
+
 .top60 {
   margin-top: 3vh;
 }

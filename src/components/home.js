@@ -1,7 +1,7 @@
 import React from 'react'
 import AnimatedBg from './animated_bg'
 import PageTop from './page_top'
-import Experiences from './experiences'
+import Experiences from './projects'
 import { Breakpoint, BreakpointProvider } from 'react-socks';
 import me from '../assets/imgs/me.jpg'
 import SocialButton from './social_button'

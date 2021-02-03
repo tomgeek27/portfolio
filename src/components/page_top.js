@@ -99,12 +99,11 @@ function PageTop() {
               </div>
             </div>
           </div>
-          <div style={{
-            maxWidth: '300px',
+          <div 
+            className="flex-row horizontal-center"
+          style={{
             width: '200px',
-            display: 'flex',
             justifyContent: 'space-around',
-            alignItems: 'center',
             marginTop: '35px',
             marginBottom: '0px'
           }}>

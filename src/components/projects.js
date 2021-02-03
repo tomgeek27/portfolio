@@ -1,6 +1,6 @@
 import React from 'react'
 import ProjectGrid from './project_grid'
-import ghlogo from '../assets/imgs/github.svg'
+import ritmu from '../assets/imgs/projects/ritmu.png'
 
 function Projects() {
   return (
@@ -17,27 +17,27 @@ function Projects() {
           {
             title: 'Ritm-U',
             subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ghlogo
+            src: ritmu
           },
           {
             title: 'Ritm-U',
             subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ghlogo
+            src: ritmu
           },
           {
             title: 'Ritm-U',
             subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ghlogo
+            src: ritmu
           },
           {
             title: 'Ritm-U',
             subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ghlogo
+            src: ritmu
           },
           {
             title: 'Ritm-U',
             subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-            src: ghlogo
+            src: ritmu
           },
         ]}/>
       </div>

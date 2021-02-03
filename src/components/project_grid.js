@@ -10,13 +10,10 @@ function ProjectGrid(props) {
     <div class="flex-column">
       {
         _.times(triples, (i) => {
-          console.log(props.projects.slice((3*i), Math.min((3*i) + 3), props.projects.length))
-
           return <div class="flex-row vertical-center">
             {
-              //
               props.projects.slice((3*i), Math.min((3*i) + 3), props.projects.length).map(element => 
-                <Project title={element.title} subtitle={element.subtitle} src={element.src}/>
+                <Project title={element.title} subtitle={element.subtitle} src={element.src} url={element.url}/>
               )
             } </div>
           })

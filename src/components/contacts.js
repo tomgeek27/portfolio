@@ -5,7 +5,7 @@ import uplogo from '../assets/imgs/upwork.svg'
 import { gh_url, in_url, up_url } from '../constants/social_url'
 import SocialButton from './social_button'
 
-function Contacts(props) {
+function Contacts() {
   return (
     <div style={{width: '100%', backgroundColor: '#343434'}}>
       <div class="container flex-column horizontal-center">

@@ -1,6 +1,7 @@
 import React from 'react'
 import ProjectGrid from './project_grid'
 import ritmu from '../assets/imgs/projects/ritmu.png'
+import { Breakpoint } from 'react-socks';        
 
 function Projects() {
   return (
@@ -9,22 +10,31 @@ function Projects() {
       backgroundColor: 'white'
     }}>
       <div class="container">
-        <div class="flex-column center-vertical features top27">
-          Projects
-        </div>
+        <Breakpoint xl up>
+          <div class="flex-column center-vertical features top27">
+            Projects
+          </div>
+        </Breakpoint>
+        <Breakpoint m down>
+          <div class="flex-column center-vertical features-s top27">
+            Projects
+          </div>
+        </Breakpoint>
         <div class="top43 container bottom40">
           <ProjectGrid projects={[
             {
               title: 'Ritm-U',
               subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-              src: ritmu
+              src: ritmu,
+              url: ""
             },
             {
               title: 'Ritm-U',
               subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-              src: ritmu
+              src: ritmu,
+              url: ""
             },
-          ]}/>
+          ]}/> 
         </div>
 
       </div>

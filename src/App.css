@@ -1,7 +1,3 @@
-.App {
-    text-align: center;
-}
-
 @font-face {
     font-family: 'CoolveticaRg';
     src: url(./fonts/coolveticarg.ttf);
@@ -36,42 +32,18 @@
     text-align: center;
 }
 
-.features {
-    color: #707070;
-    font-family: 'CoolveticaRg';
-    font-size: 55px;
-    text-align: center;
-}
-
-.semicenter {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-}
-
-#imgprofile {
-    border: 1px solid #707070;
-}
-
-#location {
-    width: 14.9px;
-    height: 20.3px;
-    margin-right: 10px;
-}
-
-.center-vertical {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .secondary-title {
     color: #707070;
     font-weight: normal;
     font-size: 40px;
     font-family: 'CoolveticaRg';
+}
+
+.features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 55px;
+    text-align: center;
 }
 
 .content {
@@ -103,6 +75,24 @@
     height: 38px;
     width: 38px;
 }
+
+#imgprofile {
+    border: 1px solid #707070;
+}
+
+#location {
+    width: 14.9px;
+    height: 20.3px;
+    margin-right: 10px;
+}
+
+.center-vertical {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
 
 .flex-column {
     display: flex;
@@ -160,6 +150,8 @@
     font-family: 'CoolveticaRg';
     color: #343434;
     text-align: left;
+    margin-bottom: 13px;
+    margin-top: 50px;
 }
 
 .margin43h {
@@ -265,4 +257,84 @@
     text-align: center;
     color: white;
     margin-top: 41px;
+}
+
+.main-title-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+    text-align: center;    
+}
+
+.main-subtitle-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 12px;
+    font-family: 'ocr';
+    text-align: center;
+}
+
+.secondary-title-left-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+}
+
+.secondary-title-right-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+    text-align: right;
+}
+
+.content-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'CoolveticaRg';
+    text-align: left;
+}
+
+.detail-key-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'CoolveticaRg';
+    text-align: left;
+}
+
+.detail-value-s {
+    color: #707070;
+    font-weight: normal;
+    font-size: 20px;
+    font-family: 'CoolveticaRg';
+    text-align: right;
+    opacity: 0.61;
+}
+
+.social-icon-s {
+    height: 38px;
+    width: 38px;
+}
+
+.margin-s {
+    margin: 0px 5%;
+}
+
+.features-s {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+}
+
+.screen-mobile {
+    height: 100vh;
+}
+
+.no-jump-animated {
+    overflow: hidden;
 }

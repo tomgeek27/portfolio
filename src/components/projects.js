@@ -16,7 +16,7 @@ function Projects() {
             Projects
           </div>
         </Breakpoint>
-        <Breakpoint m down>
+        <Breakpoint x down>
           <div class="flex-column center-vertical features-s top27">
             Projects
           </div>

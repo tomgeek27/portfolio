@@ -1,7 +1,8 @@
 import React from 'react'
 import ProjectGrid from './project_grid'
-import ritmu from '../assets/imgs/projects/ritmu.png'
 import { Breakpoint } from 'react-socks';        
+
+import {projects} from '../constants'
 
 function Projects() {
   return (
@@ -21,20 +22,7 @@ function Projects() {
           </div>
         </Breakpoint>
         <div class="top43 container bottom40">
-          <ProjectGrid projects={[
-            {
-              title: 'Ritm-U',
-              subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-              src: ritmu,
-              url: ""
-            },
-            {
-              title: 'Ritm-U',
-              subtitle: 'Applicazione Android/iOS per il controllo del respiro',
-              src: ritmu,
-              url: ""
-            },
-          ]}/> 
+          <ProjectGrid projects={projects}/> 
         </div>
 
       </div>

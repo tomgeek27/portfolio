@@ -4,7 +4,7 @@ import SocialButton from './social_button'
 import ghlogo from '../assets/imgs/github.svg'
 import inlogo from '../assets/imgs/linkedin.svg'
 import uplogo from '../assets/imgs/upwork.svg'
-import { gh_url, in_url, up_url } from '../constants/social_url'
+import { gh_url, in_url, up_url } from '../constants'
 import { Breakpoint } from 'react-socks';        
 
 

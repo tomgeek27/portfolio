@@ -11,16 +11,9 @@ function Projects() {
       backgroundColor: 'white'
     }}>
       <div class="container">
-        <Breakpoint xl up>
-          <div class="flex-column center-vertical features top27">
-            Projects
-          </div>
-        </Breakpoint>
-        <Breakpoint x down>
-          <div class="flex-column center-vertical features-s top27">
-            Projects
-          </div>
-        </Breakpoint>
+        <div class="flex-column center-vertical features top27">
+          Projects
+        </div>
         <div class="top43 container bottom40">
           <ProjectGrid projects={projects}/> 
         </div>

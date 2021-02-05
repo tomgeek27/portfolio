@@ -19,14 +19,6 @@
 .main-subtitle {
     color: #707070;
     font-weight: normal;
-    font-size: 40px;
-    font-family: 'CoolveticaRg';
-    text-align: center;
-}
-
-.main-subsubtitle {
-    color: #707070;
-    font-weight: normal;
     font-size: 16px;
     font-family: 'ocr';
     text-align: center;
@@ -40,11 +32,12 @@
 }
 
 .features {
-    color: #707070;
-    font-family: 'CoolveticaRg';
-    font-size: 55px;
-    text-align: center;
+  color: #707070;
+  font-family: 'CoolveticaRg';
+  font-size: 55px;
+  text-align: center;
 }
+
 
 .content {
     color: #707070;
@@ -324,17 +317,96 @@
     margin: 0px 5%;
 }
 
-.features-s {
-    color: #707070;
-    font-family: 'CoolveticaRg';
-    font-size: 50px;
-    text-align: center;
-}
-
 .screen-mobile {
     height: 100vh;
 }
 
 .no-jump-animated {
     overflow: hidden;
+}
+
+@media screen and (max-width: 1024px) {
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .main-title {
+    color: #707070;
+    font-weight: normal;
+    font-size: 48px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
+  }
+
+  .main-subtitle {
+    color: #707070;
+    font-weight: normal;
+    font-size: 19px;
+    font-family: 'ocr';
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 426px) {
+  
+  .header {
+    margin-bottom: 10%;
+  }
+
+  .main-title {
+    color: #707070;
+    font-weight: normal;
+    font-size: 43px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
+    align-self: center;
+  }
+
+  .main-subtitle {
+    color: #707070;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'ocr';
+    text-align: center;
+  }
+
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 321px) {
+  
+  .header {
+    margin: 0px 10%;
+  }
+
+  .main-title {
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
+  }
+
+  .main-subtitle {
+    color: #707070;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'ocr';
+    text-align: center;
+  }
+
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+  }
 }

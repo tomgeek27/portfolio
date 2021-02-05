@@ -124,6 +124,11 @@
     border: 0.5px solid rgba(112, 112, 112, 0.53);
 }
 
+.img-project {
+  width: 150px;
+  height: 150px;
+}
+
 .title-project {
     font-size: 28px;
     font-family: 'CoolveticaRg';
@@ -379,6 +384,16 @@
     font-size: 50px;
     text-align: center;
   }
+
+  .exp-title {
+    font-size: 37px;
+    font-family: 'CoolveticaRg';
+    color: #343434;
+    text-align: left;
+    margin-bottom: 13px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
 }
 
 @media screen and (max-width: 321px) {
@@ -409,4 +424,32 @@
     font-size: 50px;
     text-align: center;
   }
+
+  .project {
+    width: 266px;
+    height: 266px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(112, 112, 112, 0.53);
+  }
+
+  .img-project {
+    width: 122px;
+    height: 122px;
+  }
+
+  .title-project {
+    font-size: 22px;
+    font-family: 'CoolveticaRg';
+    color: #707070;
+    text-align: center;
+  }
+
+  .subtitle-project {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    text-align: center;
+  }
+
+
 }

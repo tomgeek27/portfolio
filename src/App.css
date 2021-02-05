@@ -38,7 +38,6 @@
   text-align: center;
 }
 
-
 .content {
     color: #707070;
     font-weight: normal;
@@ -60,8 +59,10 @@
     font-weight: normal;
     font-size: min(1.7vmax, 20px);
     font-family: 'CoolveticaRg';
-    text-align: left;
+    text-align: right;
     opacity: 0.61;
+    max-width: 70%;
+    overflow-wrap: break-word;
 }
 
 .social-icon {
@@ -236,7 +237,7 @@
 
 .exp-location-element {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18;
+    font-size: 18px;
     text-align: left;
     color: #47b5ff;
     margin-bottom: 5px;
@@ -244,7 +245,7 @@
 
 .exp-description-element {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20;
+    font-size: 20px;
     text-align: left;
     color: #707070;
 }
@@ -346,12 +347,59 @@
     text-align: center;
   }
 
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 35px;
+    text-align: center;
+  }
+
   .main-subtitle {
     color: #707070;
     font-weight: normal;
     font-size: 19px;
     font-family: 'ocr';
     text-align: center;
+  }
+
+  .exp-title {
+    font-size: 30px;
+    font-family: 'CoolveticaRg';
+    color: #343434;
+    text-align: left;
+    margin-bottom: 13px;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+  .exp-title-element {
+    font-family: 'CoolveticaRg';
+    font-size: 20px;
+    text-align: left;
+    color: #707070;
+  }
+
+  .exp-location-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #47b5ff;
+    margin-bottom: 5px;
+  }
+
+  .exp-description-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #707070;
+  }
+
+  .contacts-title {
+    font-family: 'CoolveticaRg';
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-top: 41px;
   }
 }
 
@@ -378,6 +426,25 @@
     text-align: center;
   }
 
+  .detail-key {
+    color: #707070;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'CoolveticaRg';
+    text-align: left;
+  }
+
+  .detail-value {
+    color: #707070;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'CoolveticaRg';
+    text-align: right;
+    opacity: 0.61;
+    overflow-wrap: break-word;
+    max-width: 70%;
+  }
+
   .features {
     color: #707070;
     font-family: 'CoolveticaRg';
@@ -393,7 +460,29 @@
     margin-bottom: 13px;
     margin-left: 10px;
     margin-top: 50px;
-}
+  }
+
+  .exp-title-element {
+    font-family: 'CoolveticaRg';
+    font-size: 25px;
+    text-align: left;
+    color: #707070;
+  }
+
+  .exp-location-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    color: #47b5ff;
+    margin-bottom: 5px;
+  }
+
+  .exp-description-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #707070;
+  }
 }
 
 @media screen and (max-width: 321px) {

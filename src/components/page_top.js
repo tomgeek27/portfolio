@@ -4,9 +4,8 @@ import SocialButton from './social_button'
 import ghlogo from '../assets/imgs/github.svg'
 import inlogo from '../assets/imgs/linkedin.svg'
 import uplogo from '../assets/imgs/upwork.svg'
-import { gh_url, in_url, up_url } from '../constants'
+import { gh_url, in_url, up_url, location, age, email} from '../constants'
 import { Breakpoint } from 'react-socks';        
-
 
 function PageTop() {
 
@@ -15,13 +14,10 @@ function PageTop() {
       <Breakpoint m up>
         <div 
           className="flex-column"
-          style={{
-            minHeight: '100vh',
-          }}>
+          style={{minHeight: '100vh'}}>
           <div style={{
             flex: 4
-          }}>
-          </div>
+          }}/>
           <div 
             className="flex-column vertical-center horizontal-center"
             style={{
@@ -48,70 +44,15 @@ function PageTop() {
                 marginTop: '20px',
                 marginBottom: '30px'
               }}>
-              <div className="flex-row vertical-center">
-                <div style={{
-                  flex: 3,
-                  flexDirection: 'column',
-                }}>
-
-                  <h2 className="secondary-title text-left">
-                    About me
-                </h2>
-                  <div className="content text-left">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-                </div>
-                </div>
-                <div style={{
-                  flex: 4,
-                  display: 'flex',
-                  justifyContent: 'center',
-                  alignItems: 'center',
-                }}>
-                  <div className="rounded-circle center-vertical" style={{ height: '190px', width: '190px', borderColor: '#707070' }}>
-                    <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px" />
-                  </div>
-                </div>
-                <div style={{
-                  flex: 3,
-                  flexDirection: 'column'
-                }}>
-                  <h2 className="secondary-title text-right">
-                    Details
-                </h2>
-                  <div className="row bottom13">
-                    <div className="col-4 text-left detail-key">
-                      Age
-                    </div>
-                    <div className="col-8 text-right detail-value">
-                      23
-                    </div>
-                  </div>
-                  <div className="row bottom13">
-                    <div className="col-4 text-left detail-key">
-                      e-mail
-                    </div>
-                    <div className="col-8 text-right detail-value">
-                      tommi27@live.it
-                    </div>
-                  </div>
-                  <div className="row bottom13">
-                    <div className="col-4 text-left detail-key">
-                      Location
-                    </div>
-                    <div className="col-8 text-right detail-value">
-                      Peschiera Borromeo, Milan, Italy
-                    </div>
-                  </div>
-                </div>
-              </div>
+              <Me_m />
               <div 
                 className="flex-row horizontal-center"
-              style={{
-                width: '200px',
-                justifyContent: 'space-around',
-                marginTop: '35px',
-                marginBottom: '0px'
-              }}>
+                style={{
+                  width: '200px',
+                  justifyContent: 'space-around',
+                  marginTop: '35px',
+                  marginBottom: '0px'
+                }}>
                 <SocialButton src={ghlogo} url={gh_url} />
                 <SocialButton src={inlogo} url={in_url} />
                 <SocialButton src={uplogo} url={up_url} />
@@ -151,7 +92,7 @@ function PageTop() {
             </div>
           </div>
         </div>
-        <Me />
+        <Me_s />
       </Breakpoint>
     </div>
 
@@ -161,45 +102,45 @@ function PageTop() {
 export default PageTop
 
 
-function Me() {
+function Me_s() {
   return (
     <div style={{backgroundColor: 'white', marginBottom: '45px'}} className="container">
       <div className="margin-s flex-column">
-        <div className="margin23top" style={{marginRight: '15%', justifyContent: 'flex-start'}}>
+        <div className="margin23top" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
           <div className="secondary-title-left-s" style={{marginBottom: '5px'}}>About me</div>
           <div className="content-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', marginTop: '46px', marginBottom: '57px'}}>
           <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px"/>
         </div>
-        <div style={{marginLeft: '15%', justifyContent: 'flex-end'}}>
+        <div style={{marginLeft: '10%', justifyContent: 'flex-end'}}>
           <div className="secondary-title-right-s" style={{marginBottom: '5px'}}>Details</div>
           <div className="flex-column">
             <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
               <div style={{flex:1}}/>
-              <div className="detail-key-s" style={{flex:2}}>
+              <div className="detail-key" style={{flex:2}}>
                 Age
               </div>
-              <div className="detail-value-s" style={{flex:7}}>
-                23
+              <div className="detail-value" style={{flex:7}}>
+                {age()}
               </div>
             </div>
             <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
               <div style={{flex:1}}/>
-              <div className="detail-key-s" style={{flex:2}}>
+              <div className="detail-key" style={{flex:2}}>
                 e-mail
               </div>
-              <div className="detail-value-s" style={{flex:7}}>
-                tommi27@live.it
+              <div className="detail-value" style={{flex:7}}>
+                {email}
               </div>
             </div>
             <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
               <div style={{flex:1}}/>
-              <div className="detail-key-s" style={{flex:2}}>
+              <div className="detail-key" style={{flex:2}}>
                 Location
               </div>
-              <div className="detail-value-s" style={{flex:7}}>
-                Peschiera Borromeo, Milan, Italy
+              <div className="detail-value" style={{flex:7}}>
+                {location}
               </div>
             </div>
           </div> 
@@ -218,6 +159,73 @@ function Me() {
           </div>
       </div>
     </div>
+  )
+}
+
+function Me_m() {
+  return (
+    <div className="flex-row vertical-center horizontal-center" style={{width: '100%'}}>
+    <div style={{
+      display:'flex',
+      flex: 2,
+      flexDirection: 'column',
+      overflow: 'hidden'
+    }}>
+      <h2 className="secondary-title text-left">
+        About me
+      </h2>
+      <div className="content text-left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </div>
+    </div>
+    <div style={{
+      flex: 3,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+      <div className="rounded-circle center-vertical" style={{ height: '190px', width: '190px', borderColor: '#707070' }}>
+        <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px" />
+      </div>
+    </div>
+    <div style={{
+      flex: 2,
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden'
+    }}>
+      <h2 className="secondary-title text-right">
+        Details
+      </h2>
+      <div className="flex-column">
+        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+          <div className="detail-key" style={{flex:2}}>
+            Age
+          </div>
+          <div className="detail-value" style={{flex:7}}>
+            {age()}
+          </div>
+        </div>
+        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+          <div className="detail-key" style={{flex:2}}>
+            e-mail
+          </div>
+          <div className="detail-value" style={{flex:7}}>
+            {email}
+          </div>
+        </div>
+        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+          <div className="detail-key" style={{flex:2}}>
+            Location
+          </div>
+          <div className="detail-value" style={{flex:7}}>
+            {location}
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
   )
 }
 

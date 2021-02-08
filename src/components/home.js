@@ -13,8 +13,10 @@ function Home() {
     <BreakpointProvider>
       <AnimatedBg />
       <PageTop />
-      <Projects />
-      <Experiences educations={educations} career={career}/>
+      <div style={{backgroundColor: 'white'}}>
+        <Projects />
+        <Experiences educations={educations} career={career}/>
+      </div>
       <Contacts />
     </BreakpointProvider>
   );

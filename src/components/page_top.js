@@ -18,14 +18,8 @@ function PageTop() {
           <div style={{
             flex: 4
           }}/>
-          <div 
-            className="flex-column vertical-center horizontal-center"
-            style={{
-              flex: 3,
-            }}>
-            <div className="container flex-column vertical-center" style={{
-              margin: '50px 0'
-            }}>
+          <div className="flex-column vertical-center horizontal-center" style={{flex: 3}}>
+            <div className="container flex-column vertical-center" style={{margin: '50px 0'}}>
               <h1 className="main-title">
                 Tommaso Amadori
               </h1>
@@ -34,12 +28,8 @@ function PageTop() {
               </span>
             </div>
           </div>
-          <div className="flex-column vertical-center" style={{
-            flex: 4,
-            backgroundColor: 'white'
-          }}>
-            <div 
-              className="container flex-column vertical-center horizontal-center"
+          <div className="flex-column vertical-center" style={{flex: 4, backgroundColor: 'white'}}>
+            <div className="container flex-column vertical-center horizontal-center"
               style={{
                 marginTop: '20px',
                 marginBottom: '30px'
@@ -62,7 +52,7 @@ function PageTop() {
           </div>
           <div style={{
             flex: 1,
-            minHeight: '30px'
+            minHeight: '60px'
           }}>
 
           </div>
@@ -101,6 +91,70 @@ function PageTop() {
 
 export default PageTop
 
+function Me_m() {
+  return (
+    <div className="flex-row vertical-center" style={{width: '100%'}}>
+    <div style={{
+      display:'flex',
+      flex: 2,
+      flexDirection: 'column',
+      overflow: 'hidden'
+    }}>
+      <h2 className="secondary-title text-left">
+        About me
+      </h2>
+      <div className="content text-left">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
+      </div>
+    </div>
+    <div style={{
+      flex: 3,
+      display: 'flex',
+      justifyContent: 'center',
+      alignItems: 'center',
+    }}>
+        <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px" />
+    </div>
+    <div style={{
+      flex: 2,
+      display: 'flex',
+      flexDirection: 'column',
+      overflow: 'hidden'
+    }}>
+      <h2 className="secondary-title text-right">
+        Details
+      </h2>
+      <div className="flex-column">
+        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+          <div className="detail-key" style={{flex:2}}>
+            Age
+          </div>
+          <div className="detail-value" style={{flex:7}}>
+            {age()}
+          </div>
+        </div>
+        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+          <div className="detail-key" style={{flex:2}}>
+            e-mail
+          </div>
+          <div className="detail-value" style={{flex:7}}>
+            {email}
+          </div>
+        </div>
+        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+          <div className="detail-key" style={{flex:2}}>
+            Location
+          </div>
+          <div className="detail-value" style={{flex:7}}>
+            {location}
+          </div>
+        </div>
+      </div> 
+    </div>
+  </div>
+
+  )
+}
 
 function Me_s() {
   return (
@@ -108,7 +162,7 @@ function Me_s() {
       <div className="margin-s flex-column">
         <div className="margin23top" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
           <div className="secondary-title-left-s" style={{marginBottom: '5px'}}>About me</div>
-          <div className="content-s">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
+          <div className="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', marginTop: '46px', marginBottom: '57px'}}>
           <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px"/>
@@ -161,71 +215,3 @@ function Me_s() {
     </div>
   )
 }
-
-function Me_m() {
-  return (
-    <div className="flex-row vertical-center horizontal-center" style={{width: '100%'}}>
-    <div style={{
-      display:'flex',
-      flex: 2,
-      flexDirection: 'column',
-      overflow: 'hidden'
-    }}>
-      <h2 className="secondary-title text-left">
-        About me
-      </h2>
-      <div className="content text-left">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat
-      </div>
-    </div>
-    <div style={{
-      flex: 3,
-      display: 'flex',
-      justifyContent: 'center',
-      alignItems: 'center',
-    }}>
-      <div className="rounded-circle center-vertical" style={{ height: '190px', width: '190px', borderColor: '#707070' }}>
-        <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px" />
-      </div>
-    </div>
-    <div style={{
-      flex: 2,
-      display: 'flex',
-      flexDirection: 'column',
-      overflow: 'hidden'
-    }}>
-      <h2 className="secondary-title text-right">
-        Details
-      </h2>
-      <div className="flex-column">
-        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
-          <div className="detail-key" style={{flex:2}}>
-            Age
-          </div>
-          <div className="detail-value" style={{flex:7}}>
-            {age()}
-          </div>
-        </div>
-        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
-          <div className="detail-key" style={{flex:2}}>
-            e-mail
-          </div>
-          <div className="detail-value" style={{flex:7}}>
-            {email}
-          </div>
-        </div>
-        <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
-          <div className="detail-key" style={{flex:2}}>
-            Location
-          </div>
-          <div className="detail-value" style={{flex:7}}>
-            {location}
-          </div>
-        </div>
-      </div> 
-    </div>
-  </div>
-
-  )
-}
-

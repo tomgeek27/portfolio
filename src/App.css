@@ -8,6 +8,17 @@
     src: url(./fonts/OCRAStd.otf);
 }
 
+#imgprofile {
+  box-shadow: 0px 0px 4px 1px #323232, 0px 0px 7px 4px white;
+  padding: 2px;
+}
+
+#location {
+  width: 14.9px;
+  height: 20.3px;
+  margin-right: 10px;
+}
+
 .main-title {
     color: #707070;
     font-weight: normal;
@@ -38,11 +49,19 @@
   text-align: center;
 }
 
+.cit {
+  color: #707070;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
+}
+
 .content {
     color: #707070;
     font-weight: normal;
     font-size: min(1.7vmax 20px);
-    font-family: 'CoolveticaRg';
+    font-family: 'Open Sans', sans-serif;
     text-align: left;
 }
 
@@ -68,16 +87,6 @@
 .social-icon {
     height: 38px;
     width: 38px;
-}
-
-#imgprofile {
-    border: 1px solid #707070;
-}
-
-#location {
-    width: 14.9px;
-    height: 20.3px;
-    margin-right: 10px;
 }
 
 .center-vertical {
@@ -485,7 +494,7 @@
   }
 }
 
-@media screen and (max-width: 321px) {
+@media screen and (max-width: 380px) {
   
   .header {
     margin: 0px 10%;

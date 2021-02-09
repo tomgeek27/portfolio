@@ -68,20 +68,22 @@
 .detail-key {
     color: #707070;
     font-weight: normal;
-    font-size: min(1.7vmax, 20px);
+    font-size: 18px;
     font-family: 'CoolveticaRg';
     text-align: left;
+    flex: 2;
 }
 
 .detail-value {
     color: #707070;
     font-weight: normal;
-    font-size: min(1.7vmax, 20px);
+    font-size: 18px;
     font-family: 'CoolveticaRg';
     text-align: right;
     opacity: 0.61;
-    max-width: 70%;
+    max-width: 80%;
     overflow-wrap: break-word;
+    flex: 9;
 }
 
 .social-icon {
@@ -283,45 +285,6 @@
     text-align: center;
 }
 
-.secondary-title-left-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 40px;
-    font-family: 'CoolveticaRg';
-}
-
-.secondary-title-right-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 40px;
-    font-family: 'CoolveticaRg';
-    text-align: right;
-}
-
-.content-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 20px;
-    font-family: 'CoolveticaRg';
-    text-align: left;
-}
-
-.detail-key-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 20px;
-    font-family: 'CoolveticaRg';
-    text-align: left;
-}
-
-.detail-value-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 20px;
-    font-family: 'CoolveticaRg';
-    text-align: right;
-    opacity: 0.61;
-}
 
 .social-icon-s {
     height: 38px;

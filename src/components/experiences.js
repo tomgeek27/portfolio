@@ -2,21 +2,11 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import location from '../assets/imgs/location.png'
-import { Breakpoint } from 'react-socks';        
+import Feature from './common/feature';
 
 function Experiences(props) {
   return (
-    <div class="margin50top">
-      <div class="container no-jump-animated" >
-        <div class="center-vertical features top27 bottom13">
-          Experiences
-        </div>
-        <div class="flex-column center-vertical cit top27">
-        "Good programmers know what to write. Great ones know what to rewrite" 
-      </div>
-      <div class="flex-column center-vertical cit">
-        - Eric S. Raymond
-      </div>
+    <Feature c={"no-jump-animated"}>
         <div class="exp-title">
           Education
         </div>
@@ -58,8 +48,21 @@ function Experiences(props) {
           }
         </VerticalTimeline>
         <div style={{minHeight: '150px'}}/>
-      </div>
-    </div>
+    </Feature>
+    // <div class="margin50top">
+    //   <div class="container no-jump-animated" >
+    //     <div class="center-vertical features top27 bottom13">
+    //       Experiences
+    //     </div>
+    //     <div class="flex-column center-vertical cit top27">
+    //       "Good programmers know what to write. Great ones know what to rewrite" 
+    //     </div>
+    //     <div class="flex-column center-vertical cit">
+    //       - Eric S. Raymond
+    //     </div>
+
+    //   </div>
+    // </div>
   );
 }
 

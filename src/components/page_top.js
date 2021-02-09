@@ -126,26 +126,26 @@ function Me_m() {
       </h2>
       <div className="flex-column">
         <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
-          <div className="detail-key" style={{flex:2}}>
+          <div className="detail-key">
             Age
           </div>
-          <div className="detail-value" style={{flex:7}}>
+          <div className="detail-value">
             {age()}
           </div>
         </div>
         <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
-          <div className="detail-key" style={{flex:2}}>
+          <div className="detail-key">
             e-mail
           </div>
-          <div className="detail-value" style={{flex:7}}>
+          <div className="detail-value">
             {email}
           </div>
         </div>
         <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
-          <div className="detail-key" style={{flex:2}}>
+          <div className="detail-key">
             Location
           </div>
-          <div className="detail-value" style={{flex:7}}>
+          <div className="detail-value">
             {location}
           </div>
         </div>
@@ -161,39 +161,39 @@ function Me_s() {
     <div style={{backgroundColor: 'white', marginBottom: '45px'}} className="container">
       <div className="margin-s flex-column">
         <div className="margin23top" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
-          <div className="secondary-title-left-s" style={{marginBottom: '5px'}}>About me</div>
+          <div className="secondary-title" style={{marginBottom: '5px'}}>About me</div>
           <div className="content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', marginTop: '46px', marginBottom: '57px'}}>
           <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px"/>
         </div>
         <div style={{marginLeft: '10%', justifyContent: 'flex-end'}}>
-          <div className="secondary-title-right-s" style={{marginBottom: '5px'}}>Details</div>
+          <div className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>Details</div>
           <div className="flex-column">
-            <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+            <div className="flex-row bottom13">
               <div style={{flex:1}}/>
-              <div className="detail-key" style={{flex:2}}>
+              <div className="detail-key">
                 Age
               </div>
-              <div className="detail-value" style={{flex:7}}>
+              <div className="detail-value">
                 {age()}
               </div>
             </div>
-            <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+            <div className="flex-row bottom13">
               <div style={{flex:1}}/>
-              <div className="detail-key" style={{flex:2}}>
+              <div className="detail-key">
                 e-mail
               </div>
-              <div className="detail-value" style={{flex:7}}>
+              <div className="detail-value">
                 {email}
               </div>
             </div>
-            <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+            <div className="flex-row bottom13">
               <div style={{flex:1}}/>
-              <div className="detail-key" style={{flex:2}}>
+              <div className="detail-key">
                 Location
               </div>
-              <div className="detail-value" style={{flex:7}}>
+              <div className="detail-value">
                 {location}
               </div>
             </div>

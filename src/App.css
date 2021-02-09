@@ -161,7 +161,6 @@
     color: #343434;
     text-align: left;
     margin-bottom: 13px;
-    margin-top: 50px;
 }
 
 .margin43h {
@@ -248,7 +247,7 @@
 
 .exp-location-element {
     font-family: 'Open Sans', sans-serif;
-    font-size: 18px;
+    font-size: 15px;
     text-align: left;
     color: #47b5ff;
     margin-bottom: 5px;
@@ -256,7 +255,7 @@
 
 .exp-description-element {
     font-family: 'Open Sans', sans-serif;
-    font-size: 20px;
+    font-size: 16px;
     text-align: left;
     color: #707070;
 }
@@ -303,6 +302,30 @@
     overflow: hidden;
 }
 
+.point {
+  margin: 0px 2.5px;
+  height: 13px;
+  width: 13px;
+  border-radius: 20px;
+}
+
+.point-in {
+  background-color: #47D9FF;
+}
+
+.point-out {
+  background-color: #707070;
+  opacity: .41;
+}
+
+.skill {
+  color: #707070;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'CoolveticaRg';
+  text-align: left;
+}
+
 @media screen and (max-width: 1024px) {
   .features {
     color: #707070;
@@ -341,7 +364,6 @@
     text-align: left;
     margin-bottom: 13px;
     margin-left: 10px;
-    margin-top: 50px;
   }
 
   .exp-title-element {
@@ -431,7 +453,6 @@
     text-align: left;
     margin-bottom: 13px;
     margin-left: 10px;
-    margin-top: 50px;
   }
 
   .exp-title-element {

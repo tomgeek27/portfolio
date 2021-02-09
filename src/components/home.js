@@ -12,7 +12,7 @@ import {educations, career} from '../constants'
 function Home() {
   return (
     <BreakpointProvider>
-      {/* <AnimatedBg /> */}
+      <AnimatedBg />
       <PageTop />
       <div style={{backgroundColor: 'white'}}>
         <Projects />

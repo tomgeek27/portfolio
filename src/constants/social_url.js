@@ -1,4 +1,4 @@
-const gh_url = ""
+const gh_url = "https://github.com/tomgeek27"
 const in_url = ""
 const up_url = ""
 

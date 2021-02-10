@@ -11,13 +11,14 @@ function ProjectGrid(props) {
   React.useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth)
+      console.log(window.innerWidth / project_div_dim)
     }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener("resize", handleResize);
  
   }, [])
   
-  var elem_per_row = Math.min(width / project_div_dim, 3)
+  var elem_per_row = Math.min(Math.max(1, Math.floor(width / project_div_dim)), 3)
   var triples = props.projects.length / elem_per_row + 1
   
   return (

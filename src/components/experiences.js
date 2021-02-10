@@ -10,23 +10,25 @@ function Experiences(props) {
       <div class="exp-title">
         Education
       </div>
-      <VerticalTimeline layout="1-column-left" className="custom-line">
-        {
-          props.educations.map(x => 
-            <VerticalTimelineElement
-              className="custom-icon custom-container"
-              date={x.date}
-            >
-              <h3 class="exp-title-element">{x.title}</h3>
-              <div class="flex-row">
-                <img id="location" src={location}/>
-                <div class="exp-location-element">{x.location}</div>
-              </div>
-              <div class="exp-description-element">{x.description}</div>
-            </VerticalTimelineElement>
-          )
-        }
-      </VerticalTimeline>
+      <div style={{marginBottom: '80px'}}>
+        <VerticalTimeline layout="1-column-left" className="custom-line">
+          {
+            props.educations.map(x => 
+              <VerticalTimelineElement
+                className="custom-icon custom-container"
+                date={x.date}
+              >
+                <h3 class="exp-title-element">{x.title}</h3>
+                <div class="flex-row">
+                  <img id="location" src={location}/>
+                  <div class="exp-location-element">{x.location}</div>
+                </div>
+                <div class="exp-description-element">{x.description}</div>
+              </VerticalTimelineElement>
+            )
+          }
+        </VerticalTimeline>
+      </div>
       <div class="exp-title">
         Career
       </div>

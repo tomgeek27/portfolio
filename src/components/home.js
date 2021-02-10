@@ -9,12 +9,14 @@ import { BreakpointProvider } from 'react-socks';
 
 import {educations, career} from '../constants'
 
+
 function Home() {
+
   return (
     <BreakpointProvider>
       <AnimatedBg />
       <PageTop />
-      <div style={{backgroundColor: 'white'}}>
+      <div style={{backgroundColor: 'white', paddingTop: '50px'}}>
         <Projects />
         <Skills />
         <Experiences educations={educations} career={career}/>

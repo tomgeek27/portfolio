@@ -4,11 +4,35 @@ const pl = [
     value: 0
   },
   {
-    title: 'Python',
+    title: 'React-native',
     value: 3
   },
   {
-    title: 'Python',
+    title: 'React',
+    value: 5
+  },
+  {
+    title: 'Java',
+    value: 5
+  },
+  {
+    title: 'Dart',
+    value: 5
+  },
+  {
+    title: 'Flutter',
+    value: 5
+  },
+  {
+    title: 'Javascript',
+    value: 5
+  },
+  {
+    title: 'C',
+    value: 5
+  },
+  {
+    title: 'C#',
     value: 5
   },
   {

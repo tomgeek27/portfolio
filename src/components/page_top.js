@@ -28,7 +28,7 @@ function PageTop() {
               </span>
             </div>
           </div>
-          <div className="flex-column vertical-center" style={{flex: 4, backgroundColor: 'white'}}>
+          <div className="flex-column vertical-center" style={{flex: 4, backgroundColor: 'white', maxHeight: '480px'}}>
             <div className="container flex-column vertical-center horizontal-center"
               style={{
                 marginTop: '20px',

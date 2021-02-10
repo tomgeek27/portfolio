@@ -6,6 +6,21 @@ const projects = [
     subtitle: 'Applicazione Android/iOS per il controllo del respiro',
     src: ritmu,
     url: ""
+  },  {
+    title: 'Ritm-U',
+    subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+    src: ritmu,
+    url: ""
+  },  {
+    title: 'Ritm-U',
+    subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+    src: ritmu,
+    url: ""
+  },  {
+    title: 'Ritm-U',
+    subtitle: 'Applicazione Android/iOS per il controllo del respiro',
+    src: ritmu,
+    url: ""
   },
 ]
 

@@ -236,6 +236,7 @@
 .vertical-timeline.custom-line .custom-container .vertical-timeline-element-content {
     box-shadow: none;
     padding-top: 5px;
+    padding-bottom: 30px;
 }
 
 .exp-title-element {
@@ -324,6 +325,25 @@
   font-size: 18px;
   font-family: 'CoolveticaRg';
   text-align: left;
+}
+
+.record-skill {
+  padding: 7px 5px;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.record-skill:hover {
+  background-color:#EDEDEDED;
+}
+
+.project:hover {
+  background-color: #47D9FF55;
+}
+
+.margin17 a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
 }
 
 @media screen and (max-width: 1024px) {

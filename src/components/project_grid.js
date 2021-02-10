@@ -11,7 +11,6 @@ function ProjectGrid(props) {
   React.useEffect(() => {
     function handleResize() {
       setWidth(window.innerWidth)
-      console.log(window.innerWidth / project_div_dim)
     }
     window.addEventListener('resize', handleResize)
     return () => window.removeEventListener("resize", handleResize);

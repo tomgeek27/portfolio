@@ -1,7 +1,7 @@
 import React from 'react';
-import ghlogo from '../assets/imgs/github.svg'
-import inlogo from '../assets/imgs/linkedin.svg'
-import uplogo from '../assets/imgs/upwork.svg'
+import ghlogo from '../assets/imgs/github-contact.svg'
+import inlogo from '../assets/imgs/linkedin-contact.svg'
+import uplogo from '../assets/imgs/upwork-contact.svg'
 import { gh_url, in_url, up_url } from '../constants/social_url'
 import SocialButton from './social_button'
 

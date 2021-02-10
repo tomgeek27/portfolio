@@ -13,6 +13,8 @@ setDefaultBreakpoints([
 ]);
 
 function App() {
+
+  console.log("HIRE ME! :)")
  
   return (
     <div>

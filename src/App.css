@@ -20,7 +20,7 @@
 }
 
 .main-title {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 65px;
     font-family: 'CoolveticaRg';
@@ -28,7 +28,7 @@
 }
 
 .main-subtitle {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 16px;
     font-family: 'ocr';

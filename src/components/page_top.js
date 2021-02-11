@@ -4,7 +4,8 @@ import SocialButton from './social_button'
 import ghlogo from '../assets/imgs/github.svg'
 import inlogo from '../assets/imgs/linkedin.svg'
 import uplogo from '../assets/imgs/upwork.svg'
-import { gh_url, in_url, up_url, location, age, email} from '../constants'
+import maillogo from '../assets/imgs/mail.svg'
+import { gh_url, in_url, up_url, mail_url, location, age, email} from '../constants'
 import { Breakpoint } from 'react-socks';        
 
 function PageTop() {
@@ -38,7 +39,7 @@ function PageTop() {
               <div 
                 className="flex-row horizontal-center"
                 style={{
-                  width: '200px',
+                  width: '235px',
                   justifyContent: 'space-around',
                   marginTop: '35px',
                   marginBottom: '0px'
@@ -46,6 +47,7 @@ function PageTop() {
                 <SocialButton src={ghlogo} url={gh_url} />
                 <SocialButton src={inlogo} url={in_url} />
                 <SocialButton src={uplogo} url={up_url} />
+                <SocialButton src={maillogo} url={mail_url} />
               </div>
             </div>
 
@@ -204,12 +206,13 @@ function Me_s() {
           style={{
             alignSelf: 'center',
             justifyContent: 'space-around',
-            width: '70%',
+            width: '275px',
             marginTop: '35px',
           }}>
             <SocialButton src={ghlogo} url={gh_url} />
             <SocialButton src={inlogo} url={in_url} />
             <SocialButton src={uplogo} url={up_url} />
+            <SocialButton src={maillogo} url={mail_url} />
           </div>
       </div>
     </div>

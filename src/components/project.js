@@ -1,5 +1,4 @@
 import React from 'react';
-import ghlogo from '../assets/imgs/github.svg'
 function Project(props) {
   return (
     <div className="margin17">

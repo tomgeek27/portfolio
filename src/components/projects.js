@@ -3,7 +3,7 @@ import ProjectGrid from './project_grid'
 import {projects} from '../constants'
 import Feature from './common/feature';
 
-function Projects(props) {
+function Projects() {
   return (
     <Feature 
       title="Projects" 

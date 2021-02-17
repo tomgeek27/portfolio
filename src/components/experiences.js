@@ -6,7 +6,7 @@ import Feature from './common/feature';
 
 function Experiences(props) {
   return (
-    <Feature title={"Experiences"} cit={"Good programmers know what to write. Great ones know what to rewrite"} author={"Eric S. Raymond"} childrenClasses={"no-jump-animated"}>
+    <Feature title={"Experiences"} cit={"All things would be better if they could be done twice."} author={"Johann W. Goethe"} childrenClasses={"no-jump-animated"}>
       <div class="exp-title">
         Education
       </div>

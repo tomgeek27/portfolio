@@ -11,5 +11,7 @@ const age = () => {
   return age;
 }
 
+const aboutme = "Hi, I am a student and freelance front-end developer and I’m passionate about experimenting and learning new technologies. \nI’m into programming since i was a child. I began by developing small and simple programs, then, moved by the passion for video games, I started developing different ones up to the front-end development which I'm currently specializing on"
 
-export {email, location, age}
+
+export {email, location, age, aboutme}

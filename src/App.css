@@ -236,7 +236,6 @@
 .vertical-timeline.custom-line .custom-container .vertical-timeline-element-content {
     box-shadow: none;
     padding-top: 5px;
-    padding-bottom: 30px;
 }
 
 .exp-title-element {
@@ -268,23 +267,6 @@
     color: white;
     margin-top: 41px;
 }
-
-.main-title-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 40px;
-    font-family: 'CoolveticaRg';
-    text-align: center;    
-}
-
-.main-subtitle-s {
-    color: #707070;
-    font-weight: normal;
-    font-size: 12px;
-    font-family: 'ocr';
-    text-align: center;
-}
-
 
 .social-icon-s {
     height: 38px;
@@ -348,14 +330,14 @@
 
 @media screen and (max-width: 1024px) {
   .features {
-    color: #707070;
+    color: white;
     font-family: 'CoolveticaRg';
     font-size: 50px;
     text-align: center;
   }
 
   .main-title {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 48px;
     font-family: 'CoolveticaRg';
@@ -370,7 +352,7 @@
   }
 
   .main-subtitle {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 19px;
     font-family: 'ocr';
@@ -424,7 +406,7 @@
   }
 
   .main-title {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 43px;
     font-family: 'CoolveticaRg';
@@ -433,7 +415,7 @@
   }
 
   .main-subtitle {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 13px;
     font-family: 'ocr';
@@ -505,7 +487,7 @@
   }
 
   .main-title {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 40px;
     font-family: 'CoolveticaRg';
@@ -513,7 +495,7 @@
   }
 
   .main-subtitle {
-    color: #707070;
+    color: white;
     font-weight: normal;
     font-size: 13px;
     font-family: 'ocr';

@@ -1,5 +1,7 @@
 import ritmu from '../assets/imgs/projects/ritmu.png'
 
+//MAX subtititle.length = 53
+
 const projects = [
   {
     title: 'Ritm-U',

@@ -13,7 +13,7 @@ const educations = [
   },
   {
     date: '2011 - 2016',
-    title: 'Diploma of maturity as computer expert',
+    title: 'High school diploma as computer expert',
     location: 'ITIS G. Feltrinelli',
     description: 'I graduated highschool, where I enojoyed doing scientific school subjects. In particular i liked math and computer science. During that period I developed my first Unity game project.'
   },

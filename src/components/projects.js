@@ -7,8 +7,8 @@ function Projects() {
   return (
     <Feature 
       title="Projects" 
-      cit={"Good programmers know what to write. Great ones know what to rewrite"} 
-      author={"E. Raymond"}>
+      cit={"Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."} 
+      author={"Tim Berners Lee"}>
       <ProjectGrid projects={projects}/> 
     </Feature>
   )

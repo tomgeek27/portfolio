@@ -1,4 +1,4 @@
-import './App.css';
+import './main.css';
 import Home from './components/home.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { setDefaultBreakpoints } from 'react-socks';
@@ -12,7 +12,7 @@ setDefaultBreakpoints([
   { xl: 1025 }
 ]);
 
-function App() {
+function Main() {
 
   console.log("HIRE ME! :)")
  
@@ -26,4 +26,4 @@ function App() {
   );
 }
 
-export default App;
+export default Main;

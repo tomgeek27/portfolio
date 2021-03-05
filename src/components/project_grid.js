@@ -1,5 +1,4 @@
 import React from 'react';
-const _ = require("lodash");             
 
 function ProjectGrid(props) {
   
@@ -21,12 +20,12 @@ function ProjectGrid(props) {
 
 function Project(props) {
   return (
-    <div className="margin17">
+    <div className="m-all17">
       <a href={props.url} className="project flex-column vertical-center horizontal-center">
         <img className="img-project" src={props.src} alt=""/>
-        <div className="flex-column vertical-center margin43h margin23top">
+        <div className="flex-column vertical-center m-horizontal43 m-top23">
           <span className="title-project">{props.title}</span>
-          <div className="subtitle-project margin5top">{props.subtitle}</div>
+          <div className="subtitle-project m-top5">{props.subtitle}</div>
         </div>
       </a>
     </div>

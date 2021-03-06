@@ -14,7 +14,7 @@ const educations = [
     date: '2011 - 2016',
     title: 'High school diploma as computer expert',
     location: 'ITIS G. Feltrinelli',
-    description: 'During my highschool period, what I enjoyed the most were scientific subjects such as math and computer science, in that period I also developed my first unity game project.'
+    description: 'During my highschool period, what I enjoyed the most were scientific subjects such as math and computer science, in that period I also developed my first Unity game project.'
   },
 ]
 

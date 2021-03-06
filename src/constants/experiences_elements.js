@@ -8,13 +8,13 @@ const educations = [
     date: '2016 - 2019',
     title: 'Bachelor\'s degree in Computer Science',
     location: 'Università statale degli studi di Milano',
-    description: 'My study at University of Milan was mainly computer science\'s basis based. In particular i loved studying operating system and software engineering. During this period I also learned different programming language at University and on my own. At the end of the studies, as a thesis, I studied face recognition in small images using an algorithm based on fuzzy sets'
+    description: 'My studies at the University of Milan (Università degli studi di Milano) were mainly based on computer science basis. Operating system and software engineering were the subjects I was most passionate about. Throughout the years I learned different programming languages, thanks to university courses and my personal interest. My thesis project was about face recognition in small images using an algorithm based on fuzzy sets.'
   },
   {
     date: '2011 - 2016',
     title: 'High school diploma as computer expert',
     location: 'ITIS G. Feltrinelli',
-    description: 'I graduated highschool, where I enojoyed doing scientific school subjects. In particular i liked math and computer science. During that period I developed my first Unity game project.'
+    description: 'During my highschool period, what I enjoyed the most were scientific subjects such as math and computer science, in that period I also developed my first unity game project.'
   },
 ]
 
@@ -23,7 +23,7 @@ const career = [
     date: '2015',
     title: 'Stage Beta80',
     location: 'Beta80 Group',
-    description: 'I worked as intern and i learned how to work in team and i focused on develop libraries for internal use'
+    description: 'I gained work experience and team-work skills working as an intern, where I deepened my knowledge on developing libraries for internal use'
   },
 ]
 

@@ -3,28 +3,27 @@ const educations = [
     date: '2020 - In progress',
     title: 'Master\'s degree in Computer Science',
     location: 'Università statale degli studi di Milano',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
   },
   {
     date: '2016 - 2019',
     title: 'Bachelor\'s degree in Computer Science',
     location: 'Università statale degli studi di Milano',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+    description: 'My studies at the University of Milan (Università degli studi di Milano) were mainly based on computer science basis. Operating system and software engineering were the subjects I was most passionate about. Throughout the years I learned different programming languages, thanks to university courses and my personal interest. My thesis project was about face recognition in small images using an algorithm based on fuzzy sets.'
   },
   {
     date: '2011 - 2016',
-    title: 'Diploma of maturity as computer expert',
+    title: 'High school diploma as computer expert',
     location: 'ITIS G. Feltrinelli',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+    description: 'During my highschool period, what I enjoyed the most were scientific subjects such as math and computer science, in that period I also developed my first Unity game project.'
   },
 ]
 
 const career = [
   {
-    date: '2016 - 2016',
+    date: '2015',
     title: 'Stage Beta80',
     location: 'Beta80 Group',
-    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat'
+    description: 'I gained work experience and team-work skills working as an intern, where I deepened my knowledge on developing libraries for internal use.'
   },
 ]
 

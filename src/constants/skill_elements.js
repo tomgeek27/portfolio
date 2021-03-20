@@ -1,11 +1,11 @@
 const pl = [
   {
-    title: 'Python',
-    value: 4
+    title: 'Flutter',
+    value: 5
   },
   {
-    title: 'React-native',
-    value: 4
+    title: 'Dart',
+    value: 5
   },
   {
     title: 'React',
@@ -16,24 +16,20 @@ const pl = [
     value: 5
   },
   {
-    title: 'Dart',
-    value: 5
-  },
-  {
-    title: 'Flutter',
-    value: 5
-  },
-  {
     title: 'Javascript',
     value: 5
   },
   {
-    title: 'C',
+    title: 'React-native',
     value: 4
   },
   {
-    title: 'C#',
-    value: 3
+    title: 'Python',
+    value: 4
+  },
+  {
+    title: 'C',
+    value: 4
   },
   {
     title: 'SQL',
@@ -63,15 +59,19 @@ const tools = [
     value: 5
   },
   {
-    title: 'Visual Studio Code',
+    title: 'Git',
+    value: 5
+  },
+  {
+    title: 'Unix-like systems',
+    value: 5
+  },
+  {
+    title: 'Command Line Unix-like',
     value: 5
   },
   {
     title: 'Adobe XD',
-    value: 5
-  },
-  {
-    title: 'SQL oracle developer',
     value: 5
   },
   {
@@ -83,23 +83,15 @@ const tools = [
     value: 4
   },
   {
+    title: 'Intellij',
+    value: 4
+  },
+  {
     title: 'Unity 3D',
     value: 4
   },
   {
-    title: 'MS Office',
-    value: 4
-  },
-  {
-    title: 'Linux',
-    value: 5
-  },
-  {
-    title: 'OS X',
-    value: 5
-  },
-  {
-    title: 'Windows',
+    title: 'Datagrip',
     value: 3
   }
 ]

@@ -107,7 +107,7 @@ function Me_m() {
               Details
             </h2>
             <div className="flex-column">
-              <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+              <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">
                   Age
                 </div>
@@ -115,7 +115,7 @@ function Me_m() {
                   {age()}
                 </div>
               </div>
-              <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+              <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">
                   e-mail
                 </div>
@@ -123,7 +123,7 @@ function Me_m() {
                   {email}
                 </div>
               </div>
-              <div className="flex-row bottom13" style={{justifyContent: 'space-between'}}>
+              <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">
                   Location
                 </div>
@@ -159,7 +159,7 @@ function Me_s() {
   return (
     <div style={{backgroundColor: 'white', marginBottom: '45px'}} className="container">
       <div className="margin-s flex-column">
-        <div className="margin23top" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
+        <div className="m-top23" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
           <div className="secondary-title" style={{marginBottom: '5px'}}>About me</div>
           <div className="content">{aboutme}</div>
         </div>
@@ -169,7 +169,7 @@ function Me_s() {
         <div style={{marginLeft: '10%', justifyContent: 'flex-end'}}>
           <div className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>Details</div>
           <div className="flex-column">
-            <div className="flex-row bottom13">
+            <div className="flex-row m-bottom13">
               <div style={{flex:1}}/>
               <div className="detail-key">
                 Age
@@ -178,7 +178,7 @@ function Me_s() {
                 {age()}
               </div>
             </div>
-            <div className="flex-row bottom13">
+            <div className="flex-row m-bottom13">
               <div style={{flex:1}}/>
               <div className="detail-key">
                 e-mail
@@ -187,7 +187,7 @@ function Me_s() {
                 {email}
               </div>
             </div>
-            <div className="flex-row bottom13">
+            <div className="flex-row m-bottom13">
               <div style={{flex:1}}/>
               <div className="detail-key">
                 Location
@@ -199,7 +199,7 @@ function Me_s() {
           </div> 
         </div>
         <div 
-          className="flex-row horizontal-center bottom45"
+          className="flex-row horizontal-center p-bottom45"
           style={{
             alignSelf: 'center',
             justifyContent: 'space-around',

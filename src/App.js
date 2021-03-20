@@ -2,7 +2,6 @@ import './App.css';
 import Home from './components/home.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { setDefaultBreakpoints } from 'react-socks';
-import { Helmet } from 'react-helmet';
 
 setDefaultBreakpoints([
   { xs: 0 },
@@ -18,9 +17,6 @@ function App() {
  
   return (
     <div>
-      <Helmet>
-        <title>Tommaso Amadori | Portfolio</title>
-      </Helmet>
       <Home />
     </div>
   );

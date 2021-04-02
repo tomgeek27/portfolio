@@ -8,6 +8,11 @@
     src: url(./fonts/OCRAStd.otf);
 }
 
+@keyframes scrollmove {
+  from {bottom: 58px;}
+  to {bottom: 50px;}
+}
+
 #imgprofile {
   box-shadow: 0px 0px 4px 1px #323232, 0px 0px 7px 4px white;
   padding: 2px;
@@ -33,6 +38,11 @@
     font-size: 16px;
     font-family: 'ocr';
     text-align: center;
+}
+
+.scroll-down-icon {
+  height: 35px;
+  width: 35px;
 }
 
 .secondary-title {
@@ -396,6 +406,12 @@
     font-size: 13px;
     font-family: 'ocr';
     text-align: center;
+  }
+
+  .scroll-down {
+    position: absolute;
+    animation: scrollmove 0.8s infinite;
+    animation-direction: alternate;
   }
 
   .detail-key {

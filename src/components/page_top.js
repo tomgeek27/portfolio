@@ -5,8 +5,10 @@ import ghlogo from '../assets/imgs/github.svg'
 import inlogo from '../assets/imgs/linkedin.svg'
 import uplogo from '../assets/imgs/upwork.svg'
 import maillogo from '../assets/imgs/mail.svg'
+import scrolldown from '../assets/imgs/scroll-down.svg'
 import { gh_url, in_url, up_url, mail_url, location, age, email, aboutme} from '../constants'
 import { Breakpoint } from 'react-socks';        
+import Div100vh from 'react-div-100vh'
 
 function PageTop() {
 
@@ -37,29 +39,34 @@ function PageTop() {
         </div>
       </Breakpoint>
       <Breakpoint s down>
-        <div className="flex-column vertical-center horizontal-center screen-mobile">
-          <div className="flex-column vertical-center horizontal-center header">
-            <h1 className="main-title">
-              Tommaso Amadori
-              <div 
-              style={{
-                width: '100%', 
-                border: '0.2px solid #707070',
-                marginTop: '10px',
-              }}
-            />
-            </h1>
+        <Div100vh>
+          <div className="flex-column vertical-center horizontal-center screen-mobile">
+            <div className="flex-column vertical-center horizontal-center header">
+              <h1 className="main-title">
+                Tommaso Amadori
+                <div 
+                style={{
+                  width: '100%', 
+                  border: '0.2px solid #707070',
+                  marginTop: '10px',
+                }}
+              />
+              </h1>
 
-            <div
-              className="main-subtitle" 
-              style={{
-                marginTop: '26px'
-              }}
-            >
-              /* write, compile, run, sleep */
+              <div
+                className="main-subtitle" 
+                style={{
+                  marginTop: '26px'
+                }}
+              >
+                /* write, compile, run, sleep */
+              </div>
+            </div>
+            <div className="scroll-down">
+              <img src={scrolldown} className="scroll-down-icon"/>
             </div>
           </div>
-        </div>
+        </Div100vh>
         <Me_s />
       </Breakpoint>
     </div>

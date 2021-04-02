@@ -1,38 +1,531 @@
-.App {
+@font-face {
+    font-family: 'CoolveticaRg';
+    src: url(./fonts/coolveticarg.ttf);
+}
+
+@font-face {
+    font-family: 'ocr';
+    src: url(./fonts/OCRAStd.otf);
+}
+
+@keyframes scrollmove {
+  from {bottom: 38px;}
+  to {bottom: 30px;}
+}
+
+#imgprofile {
+  box-shadow: 0px 0px 4px 1px #323232, 0px 0px 7px 4px white;
+  padding: 2px;
+}
+
+#location {
+  width: 14.9px;
+  height: 20.3px;
+  margin-right: 10px;
+}
+
+.main-title {
+    color: white;
+    font-weight: normal;
+    font-size: 65px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
+}
+
+.main-subtitle {
+    color: white;
+    font-weight: normal;
+    font-size: 16px;
+    font-family: 'ocr';
+    text-align: center;
+}
+
+.scroll-down-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.secondary-title {
+    color: #707070;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+}
+
+.features {
+  color: #707070;
+  font-family: 'CoolveticaRg';
+  font-size: 55px;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.cit {
+  color: #707070;
+  font-family: 'Open Sans', sans-serif;
+  font-style: italic;
+  font-size: 18px;
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.content {
+    color: #707070;
+    font-weight: normal;
+    font-size: min(1.7vmax 20px);
+    font-family: 'Open Sans', sans-serif;
+    text-align: left;
+}
+
+.detail-key {
+    color: #707070;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'CoolveticaRg';
+    text-align: left;
+    flex: 2;
+}
+
+.detail-value {
+    color: #707070;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'CoolveticaRg';
+    text-align: right;
+    opacity: 0.61;
+    max-width: 80%;
+    overflow-wrap: break-word;
+    flex: 9;
+}
+
+.social-icon {
+  height: 35px;
+  width: 35px;
+}
+
+.social-icon-external {
+  border-radius: 8px;
+  padding: 5px;
+}
+
+.social-icon-external:hover {
+  background-color: #AAAAAA66;
+}
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+}
+
+.vertical-center {
+    justify-content: center;
+}
+
+.horizontal-center {
+    align-items: center;
+}
+
+.p-top27 {
+    padding-top: 27px;
+}
+
+.p-bottom40 {
+    padding-bottom: 40px;
+}
+
+.project {
+    width: 330px;
+    height: 330px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(112, 112, 112, 0.53);
+}
+
+.img-project {
+  width: 150px;
+  height: 150px;
+}
+
+.title-project {
+    font-size: 28px;
+    font-family: 'CoolveticaRg';
+    color: #707070;
+    text-align: center;
+}
+
+.subtitle-project {
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    text-align: center;
+}
+
+.exp-title {
+    font-size: 42px;
+    font-family: 'CoolveticaRg';
+    color: #343434;
+    text-align: left;
+    margin-bottom: 13px;
+}
+
+.m-horizontal43 {
+    margin: 0px 43px;
+}
+
+.m-all17 {
+    margin: 17px 17px;
+}
+
+.m-top23 {
+    margin-top: 23px;
+}
+
+.m-top5 {
+    margin-top: 5px;
+}
+
+.m-top43 {
+    margin-top: 43px;
+}
+
+.p-bottom45 {
+    padding-bottom: 45px;
+}
+
+.m-bottom13 {
+    margin-bottom: 13px;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.vertical-timeline.custom-line::before {
+    background-color: #343434;
+}
+
+.vertical-timeline.custom-line {
+    padding: 2em 0 0 0;
+}
+
+.vertical-timeline.custom-line .custom-icon .vertical-timeline-element-icon {
+    background-color: white;
+    width: 30px;
+    height: 30px;
+    left: 5px;
+    top: 7px;
+    box-shadow: inset 0px 0px 0px 4px #323232, 0px 0px 7px 4px white;
+    border: 4px solid white;
+}
+
+.vertical-timeline.custom-line .custom-container .vertical-timeline-element-content {
+    box-shadow: none;
+    padding-top: 5px;
+}
+
+.exp-title-element {
+    font-family: 'CoolveticaRg';
+    font-size: 32px;
+    text-align: left;
+    color: #707070;
+}
+
+.exp-location-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #47b5ff;
+    margin-bottom: 5px;
+}
+
+.exp-description-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    text-align: left;
+    color: #707070;
+}
+
+.contacts-title {
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+    color: white;
+    margin-top: 41px;
+}
+
+.margin-s {
+    margin: 0px 5%;
+}
+
+.screen-mobile {
+    height: 100vh;
+}
+
+.no-jump-animated {
+    overflow: hidden;
+}
+
+.point {
+  margin: 0px 2.5px;
+  height: 13px;
+  width: 13px;
+  border-radius: 20px;
+}
+
+.point-in {
+  background-color: #47D9FF;
+}
+
+.point-out {
+  background-color: #707070;
+  opacity: .41;
+}
+
+.skill {
+  color: #707070;
+  font-weight: normal;
+  font-size: 18px;
+  font-family: 'CoolveticaRg';
+  text-align: left;
+}
+
+.record-skill {
+  padding: 7px 5px;
+  border-radius: 8px;
+  justify-content: space-between;
+}
+
+.record-skill:hover {
+  background-color:#EDEDEDED;
+}
+
+.project:hover {
+  background-color: #47D9FF44;
+}
+
+.margin17 a:hover, a:visited, a:link, a:active
+{
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1024px) {
+  .features {
+    color: white;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .main-title {
+    color: white;
+    font-weight: normal;
+    font-size: 48px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
+  }
+
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .main-subtitle {
+    color: white;
+    font-weight: normal;
+    font-size: 19px;
+    font-family: 'ocr';
+    text-align: center;
+  }
+
+  .exp-title {
+    font-size: 30px;
+    font-family: 'CoolveticaRg';
+    color: #343434;
+    text-align: left;
+    margin-bottom: 13px;
+    margin-left: 10px;
+  }
+
+  .exp-title-element {
+    font-family: 'CoolveticaRg';
+    font-size: 20px;
+    text-align: left;
+    color: #707070;
+  }
+
+  .exp-location-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #47b5ff;
+    margin-bottom: 5px;
+  }
+
+  .exp-description-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 15px;
+    text-align: left;
+    color: #707070;
+  }
+
+  .contacts-title {
+    font-family: 'CoolveticaRg';
+    font-size: 45px;
+    text-align: center;
+    color: white;
+    margin-top: 41px;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+@media screen and (max-width: 426px) {
+  
+  .header {
+    margin-bottom: 10%;
+  }
+
+  .main-title {
+    color: white;
+    font-weight: normal;
+    font-size: 43px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
+    align-self: center;
+  }
+
+  .main-subtitle {
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'ocr';
+    text-align: center;
+  }
+
+  .scroll-down {
+    position: absolute;
+    animation: scrollmove 0.8s infinite;
+    animation-direction: alternate;
+  }
+
+  .detail-key {
+    color: #707070;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'CoolveticaRg';
+    text-align: left;
+  }
+
+  .detail-value {
+    color: #707070;
+    font-weight: normal;
+    font-size: 18px;
+    font-family: 'CoolveticaRg';
+    text-align: right;
+    opacity: 0.61;
+    overflow-wrap: break-word;
+    max-width: 70%;
+  }
+
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .exp-title {
+    font-size: 37px;
+    font-family: 'CoolveticaRg';
+    color: #343434;
+    text-align: left;
+    margin-bottom: 13px;
+    margin-left: 10px;
+  }
+
+  .exp-title-element {
+    font-family: 'CoolveticaRg';
+    font-size: 25px;
+    text-align: left;
+    color: #707070;
+  }
+
+  .exp-location-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    text-align: left;
+    color: #47b5ff;
+    margin-bottom: 5px;
+  }
+
+  .exp-description-element {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 14px;
+    text-align: left;
+    color: #707070;
+  }
 }
 
-.App-link {
-  color: #61dafb;
-}
+@media screen and (max-width: 380px) {
+  
+  .header {
+    margin: 0px 5%;
+  }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .main-title {
+    color: white;
+    font-weight: normal;
+    font-size: 40px;
+    font-family: 'CoolveticaRg';
+    text-align: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .main-subtitle {
+    color: white;
+    font-weight: normal;
+    font-size: 13px;
+    font-family: 'ocr';
+    text-align: center;
   }
+
+  .features {
+    color: #707070;
+    font-family: 'CoolveticaRg';
+    font-size: 50px;
+    text-align: center;
+  }
+
+  .project {
+    width: 266px;
+    height: 266px;
+    border-radius: 8px;
+    border: 0.5px solid rgba(112, 112, 112, 0.53);
+  }
+
+  .img-project {
+    width: 122px;
+    height: 122px;
+  }
+
+  .title-project {
+    font-size: 22px;
+    font-family: 'CoolveticaRg';
+    color: #707070;
+    text-align: center;
+  }
+
+  .subtitle-project {
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    color: #707070;
+    text-align: center;
+  }
+
+
 }

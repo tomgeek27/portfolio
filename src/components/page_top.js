@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useRef} from 'react'
 import me from '../assets/imgs/me.jpg'
 import SocialButton from './social_button'
 import ghlogo from '../assets/imgs/github.svg'
@@ -11,6 +11,11 @@ import { Breakpoint } from 'react-socks';
 import Div100vh from 'react-div-100vh'
 
 function PageTop() {
+  const me_ref = useRef(null);
+  const onButtonClick = () => {
+    // `current` points to the mounted text input element
+    me_ref.current.scrollIntoView({behavior: 'smooth'})
+  };
 
   return (
     <div>
@@ -62,11 +67,12 @@ function PageTop() {
                 /* write, compile, run, sleep */
               </div>
             </div>
-            <div className="scroll-down">
+            <div className="scroll-down" onClick={onButtonClick}>
               <img src={scrolldown} className="scroll-down-icon"/>
             </div>
           </div>
         </Div100vh>
+        <div ref={me_ref}></div>
         <Me_s />
       </Breakpoint>
     </div>

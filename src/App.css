@@ -9,8 +9,8 @@
 }
 
 @keyframes scrollmove {
-  from {bottom: 58px;}
-  to {bottom: 50px;}
+  from {bottom: 38px;}
+  to {bottom: 30px;}
 }
 
 #imgprofile {
@@ -475,7 +475,7 @@
 @media screen and (max-width: 380px) {
   
   .header {
-    margin: 0px 10%;
+    margin: 0px 5%;
   }
 
   .main-title {

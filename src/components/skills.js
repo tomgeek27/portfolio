@@ -40,28 +40,28 @@ function Skill(props) {
 
   return (
     <div>
-      <div class="exp-title">
+      <div className="exp-title">
         {props.skill}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 20px 60px' }}>
         <div className="row" style={{ width: '100%' }}>
-          {skills.map(s => (
-            <div className="col-sm-12 col-md-6">
-              {s.map(e => {
+          {skills.map((s, i) => (
+            <div key={i} className="col-sm-12 col-md-6">
+              {s.map((e, i) => {
                 return (
-                  <div className="flex-row horizontal-center record-skill">
+                  <div key={i} className="flex-row horizontal-center record-skill">
                     <div className="skill">
                       {e.title}
                     </div>
-                    <div class="flex-row">
+                    <div className="flex-row">
                       {
                         _.times(e.value, i_ => {
-                          return (<PointIn />)
+                          return (<PointIn key={i_}/>)
                         })
                       }
                       {
                         _.times(5 - e.value, i_ => {
-                          return <PointOut />
+                          return <PointOut key={i_}/>
                         })
                       }
                     </div>

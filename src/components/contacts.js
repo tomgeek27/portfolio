@@ -9,8 +9,8 @@ import SocialButton from './social_button'
 function Contacts() {
   return (
     <div style={{width: '100%', backgroundColor: '#343434'}}>
-      <div class="container flex-column horizontal-center">
-        <div class="contacts-title">Contacts</div>
+      <div className="container flex-column horizontal-center">
+        <div className="contacts-title">Contacts</div>
         <div 
           className="flex-row"
           style={{

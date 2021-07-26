@@ -108,7 +108,7 @@ function Me_m() {
             justifyContent: 'center',
             alignItems: 'center',
           }}>
-              <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px" />
+              <img id="imgprofile" className="rounded-circle" src={me} width="150px" height="150px" />
           </div>
           <div style={{
             flex: 2,
@@ -151,7 +151,7 @@ function Me_m() {
         <div 
           className="flex-row horizontal-center"
           style={{
-            width: '235px',
+            width: '200px',
             justifyContent: 'space-around',
             marginTop: '35px',
             marginBottom: '0px'
@@ -177,7 +177,7 @@ function Me_s() {
           <div className="content">{aboutme}</div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', marginTop: '46px', marginBottom: '57px'}}>
-          <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px"/>
+          <img id="imgprofile" className="rounded-circle" src={me} width="140px" height="140px"/>
         </div>
         <div style={{marginLeft: '10%', justifyContent: 'flex-end'}}>
           <div className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>Details</div>

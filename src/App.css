@@ -13,7 +13,7 @@
   to {bottom: 30px;}
 }
 
-header > a:hover {
+header > * > a:hover {
   text-decoration: none;
 }
 
@@ -26,6 +26,16 @@ header > a:hover {
   width: 14.9px;
   height: 20.3px;
   margin-right: 10px;
+}
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
 }
 
 .main-title {
@@ -67,14 +77,14 @@ header > a:hover {
   color: #707070;
   font-family: 'Open Sans', sans-serif;
   font-style: italic;
-  font-size: 18px;
+  font-size: 16.5px;
   text-align: center;
 }
 
 .content {
     color: #707070;
     font-weight: normal;
-    font-size: min(1.7vmax 20px);
+    font-size: 14px;
     font-family: 'Open Sans', sans-serif;
     text-align: left;
 }
@@ -101,8 +111,8 @@ header > a:hover {
 }
 
 .social-icon {
-  height: 35px;
-  width: 35px;
+  height: 28px;
+  width: 28px;
 }
 
 .social-icon-external {
@@ -250,7 +260,7 @@ header > a:hover {
 
 .exp-description-element {
     font-family: 'Open Sans', sans-serif;
-    font-size: 16px;
+    font-size: 15px;
     text-align: left;
     color: #707070;
 }
@@ -375,7 +385,7 @@ header > a:hover {
 
   .exp-description-element {
     font-family: 'Open Sans', sans-serif;
-    font-size: 15px;
+    font-size: 14px;
     text-align: left;
     color: #707070;
   }

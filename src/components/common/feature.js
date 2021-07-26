@@ -6,7 +6,7 @@ function Feature(props) {
       <div className="flex-column vertical-center features p-top27">
         {props.title}
       </div>
-      <div className="flex-column vertical-center cit p-top27">
+      <div className="flex-column vertical-center cit p-top27" style={{margin: '0px 20%'}}>
         "{props.cit}"
       </div>
       <div className="flex-column vertical-center cit">

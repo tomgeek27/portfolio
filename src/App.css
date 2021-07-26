@@ -13,6 +13,10 @@
   to {bottom: 30px;}
 }
 
+header > a:hover {
+  text-decoration: none;
+}
+
 #imgprofile {
   box-shadow: 0px 0px 4px 1px #323232, 0px 0px 7px 4px white;
   padding: 2px;

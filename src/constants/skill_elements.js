@@ -59,10 +59,6 @@ const tools = [
     value: 5
   },
   {
-    title: 'Git',
-    value: 5
-  },
-  {
     title: 'Unix-like systems',
     value: 5
   },

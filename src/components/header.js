@@ -8,26 +8,18 @@ export default function Header() {
 
     useScrollPosition(
       ({ prevPos, currPos }) => {
-        const isShow = currPos.y > prevPos.y
-        if (isShow !== sticky) setSticky(isShow)
+        if(currPos.y > prevPos.y)
+            setSticky(true)
+        else if(currPos.y + 15 < prevPos.y) 
+            setSticky(false)
       },
       [sticky]
     )
 
-
     return (
         <header style={{
-            backgroundColor: 'white', 
-            position: 'fixed', 
-            width: '100%', 
-            height: '57px', 
-            alignItems: 'center', 
-            display: 'flex', 
-            transform: sticky ? "translateY(0)" : "translateY(-100%)",
-            transition: "transform 200ms ",
-            top: 0,
-            zIndex: 10}}
-          >
+            display: 'flex',
+            transform: sticky ? "translateY(0)" : "translateY(-100%)"}}>
             <div style={{
               position: 'absolute',
               right: '3.5%',
@@ -35,15 +27,8 @@ export default function Header() {
               flexDirection: 'row',
               alignItems: 'center',
             }}>
-              <a
-              className="social-icon-external" 
-              style={{
-                display: 'flex',
-                flexDirection: 'row',
-                padding: '10px 10px',
-                alignItems: 'center'
-              }} href='/cv.jpg' download>
-                <img alt="" src={downloadlogo} style={{height: '16px', width: '16px', marginRight: '10px'}}/>
+              <a id="curriculumLink" className="social-icon-external" href='/cv.jpg' download>
+                <img id="downloadIcon" alt="" src={downloadlogo} />
                 <div style={{
                   fontFamily: 'CoolveticaRg',
                   color: '#707070',

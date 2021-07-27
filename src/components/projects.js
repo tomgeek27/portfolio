@@ -6,9 +6,14 @@ import Feature from './common/feature';
 function Projects() {
   return (
     <Feature 
-      title="Projects" 
-      cit={"Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."} 
-      author={"Tim Berners Lee"}>
+      title={{it: "Progetti", en: "Projects"}} 
+      cit={{
+        it: "",
+        en: "Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."}} 
+      author={{
+        it: "Tim Berners Lee",
+        en: "Tim Berners Lee"
+      }}>
       <ProjectGrid projects={projects}/> 
     </Feature>
   )

@@ -24,7 +24,9 @@ header {
   z-index: 10
 }
 
-
+#curriculumLink:hover {
+  text-decoration: none;
+}
 
 #curriculumLink {
   display: flex;
@@ -37,6 +39,15 @@ header {
   height: 16px;
   width: 16px;
   margin-right: 10px;
+  transition: opacity 200ms;
+}
+
+#downloadIcon:hover {
+  opacity: 1;
+}
+
+#downloadIcon:not(:hover){
+  opacity: 0.0;
 }
 
 #imgprofile {

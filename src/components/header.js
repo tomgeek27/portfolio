@@ -1,20 +1,28 @@
 import downloadlogo from '../assets/imgs/download.svg'
-import { useScrollPosition } from "./hooks/use_scroll_position"
+import { useScrollPosition } from "../helper/hooks/use_scroll_position"
 import {useState} from 'react'
+import { setLang } from '../helper/redux/slice'
+import { useDispatch } from 'react-redux'
+
+const DELTA_SCROLL = 15
 
 export default function Header() {
-
+    const dispatch = useDispatch()
     const [sticky, setSticky] = useState(true)
 
     useScrollPosition(
       ({ prevPos, currPos }) => {
         if(currPos.y > prevPos.y)
             setSticky(true)
-        else if(currPos.y + 15 < prevPos.y) 
+        else if(currPos.y + DELTA_SCROLL < prevPos.y) 
             setSticky(false)
       },
       [sticky]
     )
+
+    const setLanguage = (lang) => {
+        dispatch(setLang(lang))
+    }
 
     return (
         <header style={{
@@ -27,7 +35,7 @@ export default function Header() {
               flexDirection: 'row',
               alignItems: 'center',
             }}>
-              <a id="curriculumLink" className="social-icon-external" href='/cv.jpg' download>
+              <a style={{height: '40px'}} id="curriculumLink" className="social-icon-external" href='/cv.jpg' download>
                 <img id="downloadIcon" alt="" src={downloadlogo} />
                 <div style={{
                   fontFamily: 'CoolveticaRg',
@@ -38,43 +46,37 @@ export default function Header() {
                 </div>
               </a>
               <div style={{marginLeft: '20px', display: 'flex', flexDirection: 'row'}}>
-                <button onClick={() => {}}
-                  style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    font: 'inherit',
-                    cursor: 'pointer',
-                    outline: 'inherit',
-                    fontFamily: 'CoolveticaRg',
-                    fontSize: '16px',
-                    color: '#707070'
-                  }}
-                >IT</button>
                 <div 
-                className="noselect"
-                style={{
-                  margin: '0px 10px',
-                  fontFamily: 'CoolveticaRg',
-                  fontSize: '16px',
-                  color: '#707070'
-                }}>
-                  |
-                </div>
-                <button onClick={() => {}}
+                    className="social-icon-external"
+                onClick={() => {setLanguage('it')}}
                   style={{
-                    background: 'none',
-                    border: 'none',
-                    padding: 0,
-                    font: 'inherit',
+                      width: '30px',
+                      height: '40px',
                     cursor: 'pointer',
-                    outline: 'inherit',
+                    fontFamily: 'CoolveticaRg',
+                    fontSize: '16px',
+                    color: '#70707077',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center'
+                  }}
+                >IT</div>
+                <div style={{margin: '0px 5px'}}/>
+                <div onClick={() => {setLanguage('en')}}
+                className="social-icon-external"
+                  style={{
+                    width: '30px',
+                    height: '40px',
+                    display: 'flex',
+                    justifyContent: 'center',
+                    alignItems: 'center',
+                    cursor: 'pointer',
                     fontFamily: 'CoolveticaRg',
                     fontSize: '16px',
                     color: '#707070'
                   }}
-                >EN</button>
-              </div>
+                >EN</div>
+                              </div>
             </div>
           </header>    
     )

@@ -7,13 +7,8 @@ function Projects() {
   return (
     <Feature 
       title={{it: "Progetti", en: "Projects"}} 
-      cit={{
-        it: "",
-        en: "Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."}} 
-      author={{
-        it: "Tim Berners Lee",
-        en: "Tim Berners Lee"
-      }}>
+      cit={"Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."} 
+      author={"Tim Berners Lee"}>
       <ProjectGrid projects={projects}/> 
     </Feature>
   )

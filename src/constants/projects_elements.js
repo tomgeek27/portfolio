@@ -5,7 +5,10 @@ import ritmu from '../assets/imgs/projects/ritmu.png'
 const projects = [
   {
     title: 'Ritm-U',
-    subtitle: 'Android/iOS app for improve your breath\'s control',
+    subtitle: {
+      it: 'Android/iOS app per migliorare il controllo della respirazione',
+      en: 'Android/iOS app for improve your breath\'s control'
+    },
     src: ritmu,
     url: "https://www.ritm-u.com/"
   }

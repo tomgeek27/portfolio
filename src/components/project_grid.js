@@ -1,4 +1,5 @@
 import React from 'react';
+import {getTranslated} from '../helper/translater'
 
 function ProjectGrid(props) {
 
@@ -24,8 +25,8 @@ function Project(props) {
       <a href={props.url} className="project flex-column vertical-center horizontal-center">
         <img className="img-project" src={props.src} alt="" />
         <div className="flex-column vertical-center m-horizontal43 m-top23">
-          <span className="title-project">{props.title}</span>
-          <div className="subtitle-project m-top5">{props.subtitle}</div>
+          <span className="title-project">{getTranslated(props.title)}</span>
+          <div className="subtitle-project m-top5">{getTranslated(props.subtitle)}</div>
         </div>
       </a>
     </div>

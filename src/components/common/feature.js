@@ -1,10 +1,7 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
 import {getTranslated} from '../../helper/translater'
 
 function Feature(props) {
-
-  const lang = useSelector(state => state.languageReducer)
 
   return (
     <div className={`container ${props.containerClasses || ""}`} >
@@ -18,7 +15,7 @@ function Feature(props) {
         - {getTranslated(props.author)}
       </div>
       <div className={`m-top43 container p-bottom40 ${props.childrenClasses || ""}`}>
-        {getTranslated(props.children)}
+        {props.children}
       </div>
     </div>
   )

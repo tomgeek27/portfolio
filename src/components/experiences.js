@@ -2,7 +2,18 @@ import React from 'react';
 import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeline-component';
 import 'react-vertical-timeline-component/style.min.css';
 import location from '../assets/imgs/location.png'
+import { getTranslated } from '../helper/translater';
 import Feature from './common/feature';
+
+const EXPERIENCES = {
+  it: "Esperienze",
+  en: "Experiences"
+}
+
+const CAREER = {
+  it: "Carriera",
+  en: "Career"
+}
 
 function getTimelineEventElement(list) {
 
@@ -10,14 +21,14 @@ function getTimelineEventElement(list) {
     return (
       <VerticalTimelineElement
         className="custom-icon custom-container"
-        date={x.date}
+        date={getTranslated(x.date)}
       >
-        <h3 className="exp-title-element">{x.title}</h3>
+        <h3 className="exp-title-element">{getTranslated(x.title)}</h3>
         <div className="flex-row">
           <img id="location" src={location} alt="location-icon" />
-          <div className="exp-location-element">{x.location}</div>
+          <div className="exp-location-element">{getTranslated(x.location)}</div>
         </div>
-        <div className="exp-description-element">{x.description}</div>
+        <div className="exp-description-element">{getTranslated(x.description)}</div>
       </VerticalTimelineElement>
     )
   }
@@ -32,15 +43,18 @@ function getTimelineEventElement(list) {
 
 function Experiences(props) {
   return (
-    <Feature title={"Experiences"} cit={"All things would be better if they could be done twice."} author={"Johann W. Goethe"} childrenClasses={"no-jump-animated"}>
+    <Feature title={{
+      it: "Esperienze",
+      en: "Experiences"
+    }} cit={"All things would be better if they could be done twice."} author={"Johann W. Goethe"} childrenClasses={"no-jump-animated"}>
       <div className="exp-title">
-        Education
+        {getTranslated(EXPERIENCES)}
       </div>
       <div style={{ marginBottom: '80px' }}>
         {getTimelineEventElement(props.educations)}
       </div>
       <div className="exp-title">
-        Career
+        {getTranslated(CAREER)}
       </div>
       {getTimelineEventElement(props.career)}
       <div style={{ minHeight: '150px' }} />

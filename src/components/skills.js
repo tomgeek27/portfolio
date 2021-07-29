@@ -1,14 +1,31 @@
 import React from 'react'
 import Feature from './common/feature'
 import { pl, tools } from '../constants'
+import { getTranslated } from '../helper/translater';
 const _ = require("lodash");
 
 function Skills() {
 
   return (
-    <Feature title="Skills" cit="Good programmers know what to write. Great ones know what to rewrite" author="Eric S. Raymond">
-      <Skill skill={"Programming Languages & Frameworks"} skill_list={pl} />
-      <Skill skill={"Tools & Systems"} skill_list={tools} />
+    <Feature 
+      title={"Skills"} 
+      cit={"Good programmers know what to write. Great ones know what to rewrite"}
+      author={"Eric S. Raymond"}
+    >
+      <Skill 
+        skill={{
+          it: "Linguaggi di programmazione & Frameworks",
+          en: "Programming Languages & Frameworks"
+        }} 
+        skill_list={pl} 
+      />
+      <Skill 
+        skill={{
+          it: "Sistemi informatici",
+          en: "Tools & Systems"
+        }} 
+        skill_list={tools} 
+      />
     </Feature>
   )
 }
@@ -41,7 +58,7 @@ function Skill(props) {
   return (
     <div>
       <div className="exp-title">
-        {props.skill}
+        {getTranslated(props.skill)}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 20px 60px' }}>
         <div className="row" style={{ width: '100%' }}>

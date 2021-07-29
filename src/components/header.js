@@ -36,7 +36,7 @@ export default function Header() {
               flexDirection: 'row',
               alignItems: 'center',
             }}>
-              <a style={{height: '40px'}} id="curriculumLink" className="social-icon-external" href='/curriculum.pdf' download>
+              <a style={{height: '40px'}} id="curriculumLink" className="social-icon-external" href='/portfolio/curriculum.pdf'>
                 <img id="downloadIcon" alt="" src={downloadlogo}/>
                 <div style={{
                   fontFamily: 'CoolveticaRg',

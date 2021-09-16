@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.81c633df.chunk.css",
-    "main.js": "/portfolio/static/js/main.af0017cd.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.af0017cd.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.35a3a0df.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.35a3a0df.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
     "static/css/2.cefcc735.chunk.css": "/portfolio/static/css/2.cefcc735.chunk.css",
@@ -20,6 +20,7 @@
     "static/media/linkedin.c03bc52a.svg": "/portfolio/static/media/linkedin.c03bc52a.svg",
     "static/media/mail-contact.d4a25e04.svg": "/portfolio/static/media/mail-contact.d4a25e04.svg",
     "static/media/mail.4be98893.svg": "/portfolio/static/media/mail.4be98893.svg",
+    "static/media/me.998b25af.jpg": "/portfolio/static/media/me.998b25af.jpg",
     "static/media/ritmu.aba2d748.png": "/portfolio/static/media/ritmu.aba2d748.png",
     "static/media/scroll-down.e4ed3c68.svg": "/portfolio/static/media/scroll-down.e4ed3c68.svg",
     "static/media/upwork-contact.d215f979.svg": "/portfolio/static/media/upwork-contact.d215f979.svg",
@@ -30,6 +31,6 @@
     "static/css/2.cefcc735.chunk.css",
     "static/js/2.82bfb6b2.chunk.js",
     "static/css/main.81c633df.chunk.css",
-    "static/js/main.af0017cd.chunk.js"
+    "static/js/main.35a3a0df.chunk.js"
   ]
 }

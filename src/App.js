@@ -1,5 +1,6 @@
 import './App.css';
 import Home from './components/home.js';
+import Header from './components/header.js';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { setDefaultBreakpoints } from 'react-socks';
 
@@ -17,6 +18,7 @@ function App() {
  
   return (
     <div>
+      <Header />
       <Home />
     </div>
   );

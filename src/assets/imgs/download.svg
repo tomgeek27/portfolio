@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="13.312" height="14.036" viewBox="0 0 13.312 14.036">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="13.312" height="14.036" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="Repeat_Grid_5" data-name="Repeat Grid 5" clip-path="url(#clip-path)">
+    <g transform="translate(-1655.007 -19.555)">
+      <path id="download_120262" d="M8.179,5.794,5.9,3.515A.362.362,0,1,1,6.412,3l2.9,2.9a.362.362,0,0,1,0,.512l-2.9,2.9A.362.362,0,1,1,5.9,8.8L8.179,6.518H.362a.362.362,0,1,1,0-.724ZM9.053.724a.362.362,0,0,1,0-.724h2.173a1.811,1.811,0,0,1,1.811,1.811V10.5a1.811,1.811,0,0,1-1.811,1.811H9.053a.362.362,0,0,1,0-.724h2.173A1.086,1.086,0,0,0,12.312,10.5V1.811A1.086,1.086,0,0,0,11.226.724Z" transform="translate(1667.819 20.055) rotate(90)" fill="#707070" stroke="#707070" stroke-width="1"/>
+    </g>
+  </g>
+</svg>

@@ -1,14 +1,31 @@
 import React from 'react'
 import Feature from './common/feature'
 import { pl, tools } from '../constants'
+import { getTranslated } from '../helper/translater';
 const _ = require("lodash");
 
 function Skills() {
 
   return (
-    <Feature title="Skills" cit="Good programmers know what to write. Great ones know what to rewrite" author="Eric S. Raymond">
-      <Skill skill={"Programming Languages & Frameworks"} skill_list={pl} />
-      <Skill skill={"Tools & Systems"} skill_list={tools} />
+    <Feature 
+      title={"Skills"} 
+      cit={"Good programmers know what to write. Great ones know what to rewrite"}
+      author={"Eric S. Raymond"}
+    >
+      <Skill 
+        skill={{
+          it: "Linguaggi di programmazione & Frameworks",
+          en: "Programming Languages & Frameworks"
+        }} 
+        skill_list={pl} 
+      />
+      <Skill 
+        skill={{
+          it: "Sistemi informatici",
+          en: "Tools & Systems"
+        }} 
+        skill_list={tools} 
+      />
     </Feature>
   )
 }
@@ -40,28 +57,28 @@ function Skill(props) {
 
   return (
     <div>
-      <div class="exp-title">
-        {props.skill}
+      <div className="exp-title">
+        {getTranslated(props.skill)}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 20px 60px' }}>
         <div className="row" style={{ width: '100%' }}>
-          {skills.map(s => (
-            <div className="col-sm-12 col-md-6">
-              {s.map(e => {
+          {skills.map((s, i) => (
+            <div key={i} className="col-sm-12 col-md-6">
+              {s.map((e, i) => {
                 return (
-                  <div className="flex-row horizontal-center record-skill">
+                  <div key={i} className="flex-row horizontal-center record-skill">
                     <div className="skill">
                       {e.title}
                     </div>
-                    <div class="flex-row">
+                    <div className="flex-row">
                       {
                         _.times(e.value, i_ => {
-                          return (<PointIn />)
+                          return (<PointIn key={i_}/>)
                         })
                       }
                       {
                         _.times(5 - e.value, i_ => {
-                          return <PointOut />
+                          return <PointOut key={i_}/>
                         })
                       }
                     </div>

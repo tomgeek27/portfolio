@@ -9,6 +9,27 @@ import scrolldown from '../assets/imgs/scroll-down.svg'
 import { gh_url, in_url, up_url, mail_url, location, age, email, aboutme} from '../constants'
 import { Breakpoint } from 'react-socks';        
 import Div100vh from 'react-div-100vh'
+import { getTranslated } from '../helper/translater'
+
+const ABOUT_ME = {
+  it: 'Mi presento',
+  en: 'About me'
+}
+
+const DETAILS = {
+  it: 'Dettagli',
+  en: 'Details'
+}
+
+const AGE = {
+  it: 'Età',
+  en: 'Age'
+}
+
+const LOCATION = {
+  it: 'Luogo',
+  en: 'Location'
+}
 
 function PageTop() {
   const me_ref = useRef(null);
@@ -98,9 +119,9 @@ function Me_m() {
             overflow: 'hidden'
           }}>
             <h2 className="secondary-title text-left">
-              About me
+              {getTranslated(ABOUT_ME)}
             </h2>
-            <div className="content text-left">{aboutme}</div>
+            <div className="content text-left">{getTranslated(aboutme)}</div>
           </div>
           <div style={{
             flex: 3,
@@ -108,7 +129,7 @@ function Me_m() {
             justifyContent: 'center',
             alignItems: 'center',
           }}>
-              <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px" />
+              <img id="imgprofile" className="rounded-circle" src={me} width="150px" height="150px" />
           </div>
           <div style={{
             flex: 2,
@@ -117,12 +138,12 @@ function Me_m() {
             overflow: 'hidden'
           }}>
             <h2 className="secondary-title text-right">
-              Details
+              {getTranslated(DETAILS)}
             </h2>
             <div className="flex-column">
               <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">
-                  Age
+                  {getTranslated(AGE)}
                 </div>
                 <div className="detail-value">
                   {age()}
@@ -138,10 +159,10 @@ function Me_m() {
               </div>
               <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">
-                  Location
+                  {getTranslated(LOCATION)}
                 </div>
                 <div className="detail-value">
-                  {location}
+                  {getTranslated(location)}
                 </div>
               </div>
             </div> 
@@ -151,7 +172,7 @@ function Me_m() {
         <div 
           className="flex-row horizontal-center"
           style={{
-            width: '235px',
+            width: '200px',
             justifyContent: 'space-around',
             marginTop: '35px',
             marginBottom: '0px'
@@ -173,19 +194,19 @@ function Me_s() {
     <div style={{backgroundColor: 'white', marginBottom: '45px'}} className="container">
       <div className="margin-s flex-column">
         <div className="m-top23" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
-          <div className="secondary-title" style={{marginBottom: '5px'}}>About me</div>
-          <div className="content">{aboutme}</div>
+          <div className="secondary-title" style={{marginBottom: '5px'}}>{getTranslated(ABOUT_ME)}</div>
+          <div className="content">{getTranslated(aboutme)}</div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', marginTop: '46px', marginBottom: '57px'}}>
-          <img id="imgprofile" className="rounded-circle" src={me} width="180px" height="180px"/>
+          <img id="imgprofile" className="rounded-circle" src={me} width="140px" height="140px"/>
         </div>
         <div style={{marginLeft: '10%', justifyContent: 'flex-end'}}>
-          <div className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>Details</div>
+          <div className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>{getTranslated(DETAILS)}</div>
           <div className="flex-column">
             <div className="flex-row m-bottom13">
               <div style={{flex:1}}/>
               <div className="detail-key">
-                Age
+                {getTranslated(AGE)}
               </div>
               <div className="detail-value">
                 {age()}
@@ -203,10 +224,10 @@ function Me_s() {
             <div className="flex-row m-bottom13">
               <div style={{flex:1}}/>
               <div className="detail-key">
-                Location
+                {getTranslated(LOCATION)}
               </div>
               <div className="detail-value">
-                {location}
+                {getTranslated(location)}
               </div>
             </div>
           </div> 

@@ -19,9 +19,8 @@ const projects = [
       it: 'Algoritmo content-aware per resizing di immagini',
       en: 'Image resizing content-aware algorithm'
     },
-    src: seam_carving,
     url: "https://github.com/Luca-Tommy/SeamCarving",
-    avatar: true
+    avatarColor: 'rgb(125 193 116)'
   }
 ]
 

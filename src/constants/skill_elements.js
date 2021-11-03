@@ -32,6 +32,10 @@ const pl = [
     value: 4
   },
   {
+    title: 'CUDA',
+    value: 4
+  },
+  {
     title: 'SQL',
     value: 4
   },
@@ -55,11 +59,15 @@ const tools = [
     value: 5
   },
   {
+    title: 'Visual Studio Code',
+    value: 5
+  },
+  {
     title: 'Zeplin',
     value: 5
   },
   {
-    title: 'Unix-like systems',
+    title: 'Systems Unix-like',
     value: 5
   },
   {
@@ -71,7 +79,15 @@ const tools = [
     value: 5
   },
   {
+    title: 'Docker',
+    value: 4,
+  },
+  {
     title: 'Android Studio',
+    value: 4
+  },
+  {
+    title: 'Visual Studio',
     value: 4
   },
   {

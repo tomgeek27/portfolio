@@ -10,7 +10,7 @@ function ProjectGrid(props) {
           return <div key={element.title} className="flex-row vertical-center col-xl-4 col-lg-5 col-md-12">
             {
 
-              <Project title={element.title} subtitle={element.subtitle} src={element.src} url={element.url} />
+              <Project title={element.title} subtitle={element.subtitle} src={element.src} url={element.url} avatar={element.avatar}/>
 
             } </div>
         })
@@ -22,9 +22,14 @@ function ProjectGrid(props) {
 function Project(props) {
   return (
     <div className="m-all17">
-      <a href={props.url} className="project flex-column vertical-center horizontal-center">
-        <img className="img-project" src={props.src} alt="" />
-        <div className="flex-column vertical-center m-horizontal43 m-top23">
+      <a href={props.url} className="project flex-column horizontal-center">
+        <div className="overlapped-images">
+          <img className="img-project rounded-circle" src={props.src} alt=""/>
+          {props.avatar ? 
+          <img className="rounded-circle avatar-over" src={"https://github.com/tomgeek27.png"} alt="avataricon"/> : null}
+          
+        </div>
+        <div className="flex-column horizontal-center">
           <span className="title-project">{getTranslated(props.title)}</span>
           <div className="subtitle-project m-top5">{getTranslated(props.subtitle)}</div>
         </div>

@@ -1,5 +1,5 @@
 import ritmu from '../assets/imgs/projects/ritmu.png'
-import seam_carving from '../assets/imgs/projects/seam_carving.png'
+import seam_carving from '../assets/imgs/projects/gh.png'
 
 //MAX subtititle.length = 53
 
@@ -14,13 +14,14 @@ const projects = [
     url: "https://www.ritm-u.com/"
   },
   {
-    title: 'GPU accelerated seam carving',
+    title: 'CUDA seam carving',
     subtitle: {
-      it: 'Algoritmo di riduzione di immagini',
+      it: 'Algoritmo content-aware per resizing di immagini',
       en: 'Image resizing content-aware algorithm'
     },
     src: seam_carving,
-    url: "https://github.com/Luca-Tommy/SeamCarving"
+    url: "https://github.com/Luca-Tommy/SeamCarving",
+    avatar: true
   }
 ]
 

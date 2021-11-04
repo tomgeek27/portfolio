@@ -188,7 +188,7 @@ header {
     border-radius: 8px;
     padding: 20px 30px;
     justify-content: space-between;
-    border: 1px solid rgba(112, 112, 112, 0.53);
+    box-shadow: 0px 0px 8px 0px #d5d5d5;
 }
 .under {
   position: relative;
@@ -586,7 +586,7 @@ div > a:hover
     width: 266px;
     height: 266px;
     border-radius: 8px;
-    border: 0.5px solid rgba(112, 112, 112, 0.53);
+    box-shadow: 2px 2px 10px 0px #d5d5d5;
   }
 
   .img-project {

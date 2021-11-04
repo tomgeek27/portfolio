@@ -1,5 +1,4 @@
 import ritmu from '../assets/imgs/projects/ritmu.png'
-import seam_carving from '../assets/imgs/projects/gh.png'
 
 //MAX subtititle.length = 53
 

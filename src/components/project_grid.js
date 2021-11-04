@@ -9,9 +9,7 @@ function ProjectGrid(props) {
         props.projects.map((element) => {
           return <div key={element.title} className="flex-row vertical-center col-xl-4 col-lg-5 col-md-12">
             {
-
               <Project title={element.title} subtitle={element.subtitle} src={element.src} url={element.url} avatarColor={element.avatarColor}/>
-
             } </div>
         })
       }

@@ -79,6 +79,10 @@ const tools = [
     value: 5
   },
   {
+    title: 'gRPC',
+    value: 4,
+  },
+  {
     title: 'Docker',
     value: 4,
   },

@@ -51,7 +51,7 @@ header {
 }
 
 #imgprofile {
-  box-shadow: 0px 0px 4px 1px #707070;
+  box-shadow: 0px 0px 3px 0px #707070;
 }
 
 #location {
@@ -186,11 +186,33 @@ header {
     width: 330px;
     height: 330px;
     border-radius: 8px;
-    border: 0.5px solid rgba(112, 112, 112, 0.53);
+    padding: 20px 30px;
+    justify-content: space-between;
+    border: 1px solid rgba(112, 112, 112, 0.53);
+}
+.under {
+  position: relative;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
+}
+
+.avatar-over {
+  position: absolute;
+  left: 115px;
+  top: 115px;
+  height: 35px;
+  z-index: 1;
+  box-shadow: 0px 0px 3px 0px #505050;
+}
+
+.overlapped-images {
+  position: relative;
+  left: 0px;
+  top: 0px;
 }
 
 .img-project {
-  width: 150px;
   height: 150px;
 }
 

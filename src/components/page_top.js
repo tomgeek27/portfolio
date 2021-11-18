@@ -129,7 +129,7 @@ function Me_m() {
             justifyContent: 'center',
             alignItems: 'center',
           }}>
-              <img id="imgprofile" className="rounded-circle" src={me} width="150px" height="150px" />
+              <img id="imgprofile" className="rounded-circle" src={"https://github.com/tomgeek27.png"} width="180px" height="180px" />
           </div>
           <div style={{
             flex: 2,

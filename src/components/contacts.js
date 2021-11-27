@@ -13,13 +13,13 @@ const CONTACTS = {
 }
 
 const COPYRIGHT_TEXT = {
-  it: 'portfolio di Tommaso Amadori. Tutti i diritti riservati',
-  en: 'Tommaso Amadori\'s portofolio. All Rights Reserved'
+  it: 'Portfolio di Tommaso Amadori',
+  en: 'Tommaso Amadori\'s Portfolio'
 }
 
 const copyright = () => {
   let currentYear = new Date().getFullYear()
-  return `\xA9 Copyright ${currentYear}, ${getTranslated(COPYRIGHT_TEXT)}`
+  return `\xA9 ${getTranslated(COPYRIGHT_TEXT)}, ${currentYear}`
 }
 
 function Contacts() {

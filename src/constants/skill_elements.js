@@ -63,10 +63,6 @@ const tools = [
     value: 5
   },
   {
-    title: 'Zeplin',
-    value: 5
-  },
-  {
     title: 'Systems Unix-like',
     value: 5
   },
@@ -76,6 +72,10 @@ const tools = [
   },
   {
     title: 'Adobe XD',
+    value: 5
+  },
+  {
+    title: 'Zeplin',
     value: 5
   },
   {

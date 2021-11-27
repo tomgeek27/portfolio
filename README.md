@@ -1,3 +1,3 @@
 # Portfolio
 
-This is my personal website and represent my (short) curriculum resume.
+This is my personal [website](https://tomgeek27.github.io/portfolio) and represent my curriculum resume.

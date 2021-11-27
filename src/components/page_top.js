@@ -1,4 +1,4 @@
-import React, {useRef} from 'react'
+import React, {useRef, useEffect} from 'react'
 import me from '../assets/imgs/me.jpg'
 import SocialButton from './social_button'
 import ghlogo from '../assets/imgs/github.svg'
@@ -10,6 +10,8 @@ import { gh_url, in_url, up_url, mail_url, location, age, email, aboutme} from '
 import { Breakpoint } from 'react-socks';        
 import Div100vh from 'react-div-100vh'
 import { getTranslated } from '../helper/translater'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 const ABOUT_ME = {
   it: 'Mi presento',
@@ -104,6 +106,9 @@ function PageTop() {
 export default PageTop
 
 function Me_m() {
+  useEffect(() => {
+    AOS.init({})
+  })
   return (
     <div className="flex-column vertical-center" style={{flex: 4, backgroundColor: 'white'}}>
       <div className="container flex-column vertical-center horizontal-center"
@@ -116,12 +121,20 @@ function Me_m() {
             display:'flex',
             flex: 2,
             flexDirection: 'column',
-            overflow: 'hidden'
+            //overflow: 'hidden'
           }}>
-            <h2 className="secondary-title text-left">
-              {getTranslated(ABOUT_ME)}
+            <h2 
+              data-aos="fade-right" 
+              data-aos-duration="500"
+              className="secondary-title text-left">
+                {getTranslated(ABOUT_ME)}
             </h2>
-            <div className="content text-left">{getTranslated(aboutme)}</div>
+            <div 
+              data-aos="fade-up" 
+              data-aos-duration="700"            
+              className="content text-left">
+                {getTranslated(aboutme)}
+            </div>
           </div>
           <div style={{
             flex: 3,
@@ -137,10 +150,16 @@ function Me_m() {
             flexDirection: 'column',
             overflow: 'hidden'
           }}>
-            <h2 className="secondary-title text-right">
-              {getTranslated(DETAILS)}
+            <h2 
+              data-aos="fade-down" 
+              data-aos-duration="700"
+              className="secondary-title text-right">
+                {getTranslated(DETAILS)}
             </h2>
-            <div className="flex-column">
+            <div 
+              data-aos="fade-left" 
+              data-aos-duration="900"
+              className="flex-column">
               <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">
                   {getTranslated(AGE)}
@@ -190,19 +209,37 @@ function Me_m() {
 }
 
 function Me_s() {
+  useEffect(() => {
+    AOS.init({})
+  })
   return (
     <div style={{backgroundColor: 'white', marginBottom: '45px'}} className="container">
       <div className="margin-s flex-column">
         <div className="m-top23" style={{marginRight: '10%', justifyContent: 'flex-start'}}>
-          <div className="secondary-title" style={{marginBottom: '5px'}}>{getTranslated(ABOUT_ME)}</div>
-          <div className="content">{getTranslated(aboutme)}</div>
+          <div 
+            data-aos="fade-right" 
+            data-aos-duration="500"
+            className="secondary-title" style={{marginBottom: '5px'}}>
+              {getTranslated(ABOUT_ME)}</div>
+          <div
+            data-aos="fade-right" 
+            data-aos-duration="700"
+            className="content">
+              {getTranslated(aboutme)}</div>
         </div>
         <div style={{display: 'flex', justifyContent: 'center', marginTop: '46px', marginBottom: '57px'}}>
           <img id="imgprofile" className="rounded-circle" src={me} width="140px" height="140px"/>
         </div>
         <div style={{marginLeft: '10%', justifyContent: 'flex-end'}}>
-          <div className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>{getTranslated(DETAILS)}</div>
-          <div className="flex-column">
+          <div 
+            data-aos="fade-right" 
+            data-aos-duration="700"
+            className="secondary-title" style={{marginBottom: '5px', textAlign: 'right'}}>
+              {getTranslated(DETAILS)}</div>
+          <div 
+            data-aos="fade-right" 
+            data-aos-duration="700"
+            className="flex-column">
             <div className="flex-row m-bottom13">
               <div style={{flex:1}}/>
               <div className="detail-key">

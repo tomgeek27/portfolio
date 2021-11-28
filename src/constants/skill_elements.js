@@ -83,6 +83,10 @@ const tools = [
     value: 4,
   },
   {
+    title: 'GraphQL',
+    value: 4,
+  },
+  {
     title: 'Docker',
     value: 4,
   },

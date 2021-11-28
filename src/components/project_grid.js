@@ -1,15 +1,17 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import {getTranslated} from '../helper/translater'
+import AOS from 'aos'
+import "aos/dist/aos.css";
 
 function ProjectGrid(props) {
 
   return (
     <div className="row vertical-center">
       {
-        props.projects.map((element) => {
+        props.projects.map((element, i) => {
           return <div key={element.title} className="flex-row vertical-center col-xl-4 col-lg-5 col-md-12">
             {
-              <Project title={element.title} subtitle={element.subtitle} src={element.src} url={element.url} avatarColor={element.avatarColor}/>
+              <Project title={element.title} subtitle={element.subtitle} src={element.src} url={element.url} avatarColor={element.avatarColor} delay={(i * 200) + 600}/>
             } </div>
         })
       }
@@ -18,8 +20,16 @@ function ProjectGrid(props) {
 }
 
 function Project(props) {
+
+  useEffect(() => {
+    AOS.init({})
+  })
+
   return (
-    <div className="m-all17">
+    <div 
+      data-aos="fade-right"
+      data-aos-duration={props.delay}
+      className="m-all17">
       <a href={props.url} className="project flex-column horizontal-center">
         <div className="overlapped-images">
           {props.src ? <img className="img-project rounded-circle" src={props.src} alt=""/> :

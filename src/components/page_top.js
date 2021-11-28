@@ -121,17 +121,16 @@ function Me_m() {
             display:'flex',
             flex: 2,
             flexDirection: 'column',
-            //overflow: 'hidden'
           }}>
             <h2 
               data-aos="fade-right" 
-              data-aos-duration="500"
+              data-aos-duration="700"
               className="secondary-title text-left">
                 {getTranslated(ABOUT_ME)}
             </h2>
             <div 
               data-aos="fade-up" 
-              data-aos-duration="700"            
+              data-aos-duration="900"            
               className="content text-left">
                 {getTranslated(aboutme)}
             </div>
@@ -148,17 +147,16 @@ function Me_m() {
             flex: 2,
             display: 'flex',
             flexDirection: 'column',
-            overflow: 'hidden'
           }}>
             <h2 
               data-aos="fade-down" 
-              data-aos-duration="700"
+              data-aos-duration="900"
               className="secondary-title text-right">
                 {getTranslated(DETAILS)}
             </h2>
             <div 
               data-aos="fade-left" 
-              data-aos-duration="900"
+              data-aos-duration="700"
               className="flex-column">
               <div className="flex-row m-bottom13" style={{justifyContent: 'space-between'}}>
                 <div className="detail-key">

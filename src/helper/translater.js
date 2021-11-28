@@ -3,7 +3,6 @@ import { useSelector } from 'react-redux'
 function _translate(obj) {
     const lang = useSelector(state => state.languageReducer)
 
-    console.log(obj, typeof(obj))
     if(obj === undefined)
         return
 

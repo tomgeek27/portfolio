@@ -6,8 +6,8 @@ import { getTranslated } from '../helper/translater';
 import Feature from './common/feature';
 
 const EXPERIENCES = {
-  it: "Esperienze",
-  en: "Experiences"
+  it: "Istruzione",
+  en: "Education"
 }
 
 const CAREER = {

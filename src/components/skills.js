@@ -73,10 +73,7 @@ function Skill(props) {
         {getTranslated(props.skill)}
       </div>
       <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 20px 60px' }}>
-        <div 
-              //data-aos="fade-right"
-        
-        className="row" style={{ width: '100%' }}>
+        <div className="row" style={{ width: '100%' }}>
           {skills.map((s, i) => (
             <div  
               key={i}

@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.bf9e2926.chunk.css",
-    "main.js": "/portfolio/static/js/main.eea4ea7b.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.eea4ea7b.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.8fed2963.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8fed2963.js.map",
-    "static/css/2.db9de934.chunk.css": "/portfolio/static/css/2.db9de934.chunk.css",
-    "static/js/2.9b54f682.chunk.js": "/portfolio/static/js/2.9b54f682.chunk.js",
-    "static/js/2.9b54f682.chunk.js.map": "/portfolio/static/js/2.9b54f682.chunk.js.map",
+    "main.js": "/portfolio/static/js/main.9192d650.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9192d650.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.0bf68c44.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.0bf68c44.js.map",
+    "static/css/2.6343a8d8.chunk.css": "/portfolio/static/css/2.6343a8d8.chunk.css",
+    "static/js/2.9b2de584.chunk.js": "/portfolio/static/js/2.9b2de584.chunk.js",
+    "static/js/2.9b2de584.chunk.js.map": "/portfolio/static/js/2.9b2de584.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/2.db9de934.chunk.css.map": "/portfolio/static/css/2.db9de934.chunk.css.map",
+    "static/css/2.6343a8d8.chunk.css.map": "/portfolio/static/css/2.6343a8d8.chunk.css.map",
     "static/css/main.bf9e2926.chunk.css.map": "/portfolio/static/css/main.bf9e2926.chunk.css.map",
-    "static/js/2.9b54f682.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9b54f682.chunk.js.LICENSE.txt",
+    "static/js/2.9b2de584.chunk.js.LICENSE.txt": "/portfolio/static/js/2.9b2de584.chunk.js.LICENSE.txt",
     "static/media/App.css": "/portfolio/static/media/coolveticarg.42f59941.ttf",
     "static/media/download.1d611896.svg": "/portfolio/static/media/download.1d611896.svg",
     "static/media/github-contact.93f93d52.svg": "/portfolio/static/media/github-contact.93f93d52.svg",
@@ -27,10 +27,10 @@
     "static/media/upwork.15545291.svg": "/portfolio/static/media/upwork.15545291.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8fed2963.js",
-    "static/css/2.db9de934.chunk.css",
-    "static/js/2.9b54f682.chunk.js",
+    "static/js/runtime-main.0bf68c44.js",
+    "static/css/2.6343a8d8.chunk.css",
+    "static/js/2.9b2de584.chunk.js",
     "static/css/main.bf9e2926.chunk.css",
-    "static/js/main.eea4ea7b.chunk.js"
+    "static/js/main.9192d650.chunk.js"
   ]
 }

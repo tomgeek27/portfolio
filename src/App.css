@@ -52,6 +52,7 @@ header {
 
 #imgprofile {
   box-shadow: 0px 0px 3px 0px #707070;
+  z-index: 100;
 }
 
 #location {

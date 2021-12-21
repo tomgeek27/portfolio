@@ -4,19 +4,10 @@ import Particles from "react-tsparticles";
 function AnimatedBg() {
   return (
     <Particles
-      style={{
-        position: "fixed",
-        padding: "0",
-        margin: "0",
-
-        top: "0",
-        left: "0",
-
-        width: "100%",
-        height: "100%",
-        zIndex: -10
-      }}
       id="tsparticles"
+      style={{
+        zIndex: -100
+      }}
       options={{
         background: {
           color: {
@@ -38,6 +29,9 @@ function AnimatedBg() {
             },
           },
         },
+        fullScreen: {
+          zIndex: -100
+        },
         particles: {
           color: {
             value: "#ffffff",
@@ -52,6 +46,7 @@ function AnimatedBg() {
           collisions: {
             enable: false,
           },
+
           move: {
             direction: "none",
             enable: true,

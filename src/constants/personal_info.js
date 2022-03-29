@@ -1,7 +1,7 @@
 const email = "tommaso.amadori.dev@gmail.com"
 const location = {
-  it: "Peschiera Borromeo, Milano, Italia",
-  en: "Peschiera Borromeo, Milan, Italy"
+  it: "Milano, Italia",
+  en: "Milan, Italy"
 }
 const age = () => {
   var today = new Date();

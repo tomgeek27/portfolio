@@ -8,7 +8,7 @@ import scrolldown from '../assets/imgs/scroll-down.svg'
 import { gh_url, in_url, up_url, mail_url, location, age, email, aboutme} from '../constants'
 import { getTranslated } from '../helper/translater'
 import AOS from 'aos'
-import "aos/dist/aos.css";
+// import "aos/dist/aos.css";
 import Div100vh from 'react-div-100vh'
 
 const ABOUT_ME = {
@@ -62,9 +62,9 @@ function PageTop() {
     me_ref.current.scrollIntoView({behavior: 'smooth', block: 'start'})
   };
 
-  useEffect(() => {
-    AOS.init({})
-  }, [])
+  // useEffect(() => {
+  //   AOS.init({})
+  // }, [])
 
   const {width, height} = useWindowDimensions()
 
@@ -83,7 +83,7 @@ function PageTop() {
           <div className="main-title">
             Tommaso Amadori
           </div>
-          <div class="main-subtitle">
+          <div className="main-subtitle">
             /* write, compile, run, sleep */
           </div>
         </div>          
@@ -100,15 +100,15 @@ function PageTop() {
           <div 
             className="me-text-section-container">
             <div 
-              data-aos="fade-right" 
-              data-aos-duration="700"
+              // data-aos="fade-right" 
+              // data-aos-duration="700"
               className="secondary-title"
               >
                 {getTranslated(ABOUT_ME)}
             </div>
             <div 
-              data-aos="fade-up" 
-              data-aos-duration="900"            
+              // data-aos="fade-up" 
+              // data-aos-duration="900"            
               className="content text-left">
                 {getTranslated(aboutme)}
             </div>
@@ -118,16 +118,16 @@ function PageTop() {
 
           <div className="me-text-section-container">
             <div 
-              data-aos="fade-left" 
-              data-aos-duration="700"
+              // data-aos="fade-left" 
+              // data-aos-duration="700"
               className="secondary-title text-right"
               >
                 {getTranslated(DETAILS)}
             </div>
             <div 
               className="flex-column"
-              data-aos="fade-up" 
-              data-aos-duration="900" 
+              // data-aos="fade-up" 
+              // data-aos-duration="900" 
               >
               <div className="flex-row m-bottom13">
                 <div className="detail-key">
@@ -163,19 +163,6 @@ function PageTop() {
           <SocialButton src={maillogo} url={mail_url} />
         </div>
       </div>
-      
-      {/* <div className="flex-column vertical-center horizontal-center" style={{flex: 3}}>
-        <div className="container flex-column vertical-center" style={{margin: '50px 0'}}>
-          <h1 className="main-title">
-            Tommaso Amadori
-          </h1>
-          <span className="main-subtitle">
-            /* write, compile, run, sleep /
-          </span>
-        </div>
-      </div>
-      <Me/> */}
-
     </div>
   )
 

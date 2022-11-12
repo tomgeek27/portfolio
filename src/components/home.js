@@ -5,7 +5,6 @@ import Projects from './projects'
 import Skills from './skills'
 import Experiences from './experiences'
 import Contacts from './contacts'
-import { BreakpointProvider } from 'react-socks';
 
 import {educations, career} from '../constants'
 
@@ -13,16 +12,16 @@ import {educations, career} from '../constants'
 function Home() {
 
   return (
-    <BreakpointProvider>
+    <>
       <AnimatedBg />
       <PageTop />
-      <div style={{backgroundColor: 'white', paddingTop: '50px'}}>
+      {/* <div style={{backgroundColor: 'white', paddingTop: '50px'}}>
         <Projects />
         <Skills />
         <Experiences educations={educations} career={career}/>
       </div>
-      <Contacts />
-    </BreakpointProvider>
+      <Contacts /> */}
+    </>
   );
 }
 

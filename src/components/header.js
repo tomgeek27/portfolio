@@ -26,59 +26,59 @@ export default function Header() {
     }
 
     return (
-        <header style={{
-            display: 'flex',
-            transform: sticky ? "translateY(0)" : "translateY(-100%)"}}>
+      <header style={{
+        display: 'flex',
+        transform: sticky ? "translateY(0)" : "translateY(-100%)"}}>
+        <div style={{
+          position: 'absolute',
+          right: '3.5%',
+          display: 'flex',
+          flexDirection: 'row',
+          alignItems: 'center',
+        }}>
+          <a style={{height: '40px'}} id="curriculumLink" className="social-icon-external" href='/portfolio/curriculum.pdf'>
+            <img id="downloadIcon" alt="" src={downloadlogo}/>
             <div style={{
-              position: 'absolute',
-              right: '3.5%',
-              display: 'flex',
-              flexDirection: 'row',
-              alignItems: 'center',
+              fontFamily: 'CoolveticaRg',
+              color: '#707070',
+              fontSize: '16px'
             }}>
-              <a style={{height: '40px'}} id="curriculumLink" className="social-icon-external" href='/portfolio/curriculum.pdf'>
-                <img id="downloadIcon" alt="" src={downloadlogo}/>
-                <div style={{
-                  fontFamily: 'CoolveticaRg',
-                  color: '#707070',
-                  fontSize: '16px'
-                }}>
-                  Curriculum
-                </div>
-              </a>
-              <div style={{marginLeft: '20px', display: 'flex', flexDirection: 'row'}}>
-                <div 
-                    className="social-icon-external"
-                onClick={() => {setLanguage('it')}}
-                  style={{
-                      width: '30px',
-                      height: '40px',
-                    cursor: 'pointer',
-                    fontFamily: 'CoolveticaRg',
-                    fontSize: '16px',
-                    color: lang === 'it' ? '#707070' : '#70707077',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center'
-                  }}
-                >IT</div>
-                <div style={{margin: '0px 5px'}}/>
-                <div onClick={() => {setLanguage('en')}}
-                className="social-icon-external"
-                  style={{
+              Curriculum
+            </div>
+          </a>
+          <div style={{marginLeft: '20px', display: 'flex', flexDirection: 'row'}}>
+            <div 
+              className="social-icon-external"
+              onClick={() => {setLanguage('it')}}
+                style={{
                     width: '30px',
                     height: '40px',
-                    display: 'flex',
-                    justifyContent: 'center',
-                    alignItems: 'center',
-                    cursor: 'pointer',
-                    fontFamily: 'CoolveticaRg',
-                    fontSize: '16px',
-                    color: lang === 'en' ? '#707070' : '#70707077'
-                  }}
-                >EN</div>
-                              </div>
+                  cursor: 'pointer',
+                  fontFamily: 'CoolveticaRg',
+                  fontSize: '16px',
+                  color: lang === 'it' ? '#707070' : '#70707077',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center'
+                }}
+              >IT</div>
+              <div style={{margin: '0px 5px'}}/>
+              <div onClick={() => {setLanguage('en')}}
+              className="social-icon-external"
+                style={{
+                  width: '30px',
+                  height: '40px',
+                  display: 'flex',
+                  justifyContent: 'center',
+                  alignItems: 'center',
+                  cursor: 'pointer',
+                  fontFamily: 'CoolveticaRg',
+                  fontSize: '16px',
+                  color: lang === 'en' ? '#707070' : '#70707077'
+                }}
+              >EN</div>
             </div>
-          </header>    
+        </div>
+      </header>    
     )
 }

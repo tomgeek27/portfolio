@@ -16,7 +16,7 @@ const pl = [
     value: 5
   },
   {
-    title: 'Javascript',
+    title: 'Javascript/TypeScript',
     value: 5
   },
   {

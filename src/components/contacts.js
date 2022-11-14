@@ -25,16 +25,15 @@ const copyright = () => {
 function Contacts() {
   return (
     <div style={{width: '100%', backgroundColor: '#343434'}}>
-      <div className="container flex-column horizontal-center">
-        <div className="contacts-title">{getTranslated(CONTACTS)}</div>
+      <div className="content-container flex-column horizontal-center" style={{backgroundColor: 'transparent'}}>
+        <div className="content-title" style={{color: 'white'}}>{getTranslated(CONTACTS)}</div>
         <div 
-          className="flex-row"
+          className="flex-row social-buttons"
           style={{
-            width: '235px',
-            justifyContent: 'space-around',
-            marginTop: '40px',
-            marginBottom: '70px'
-          }}>
+            marginTop: '45px',
+            marginBottom: '60px'
+          }}
+          >
             <SocialButton src={ghlogo} url={gh_url} />
             <SocialButton src={inlogo} url={in_url} />
             <SocialButton src={uplogo} url={up_url} />

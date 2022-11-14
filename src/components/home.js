@@ -15,8 +15,15 @@ function Home() {
     <>
       <AnimatedBg />
       <PageTop />
-      {/* <div style={{backgroundColor: 'white', paddingTop: '50px'}}>
-        <Projects />
+      <div className="divisor"/>
+      <Projects />
+      <div className="divisor"/>
+      <Skills />
+      <div className="divisor"/>
+      <Experiences educations={educations} career={career}/>
+      <div className="divisor"/>
+      <Contacts />
+      {/* <div style={{backgroundColor: 'transparent', paddingTop: '50px'}}>
         <Skills />
         <Experiences educations={educations} career={career}/>
       </div>

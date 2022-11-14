@@ -3,7 +3,7 @@ import { VerticalTimeline, VerticalTimelineElement } from 'react-vertical-timeli
 import 'react-vertical-timeline-component/style.min.css';
 import location from '../assets/imgs/location.png'
 import { getTranslated } from '../helper/translater';
-import Feature from './common/feature';
+import Content from './common/content';
 
 const EXPERIENCES = {
   it: "Istruzione",
@@ -23,8 +23,8 @@ function getTimelineEventElement(list) {
         className="custom-icon custom-container"
         date={getTranslated(x.date)}
       >
-        <h3 className="exp-title-element">{getTranslated(x.title)}</h3>
-        <div className="flex-row">
+        <div className="exp-title-element">{getTranslated(x.title)}</div>
+        <div className="flex-row" style={{marginTop: '5px'}}>
           <img id="location" src={location} alt="location-icon" />
           <div className="exp-location-element">{getTranslated(x.location)}</div>
         </div>
@@ -43,22 +43,24 @@ function getTimelineEventElement(list) {
 
 function Experiences(props) {
   return (
-    <Feature title={{
+    <Content title={{
       it: "Esperienze",
       en: "Experiences"
     }} cit={"All things would be better if they could be done twice."} author={"Johann W. Goethe"} childrenClasses={"no-jump-animated"}>
-      <div className="exp-title">
-        {getTranslated(EXPERIENCES)}
+      <div className="width-sized-margined">
+        <div className="exp-title">
+          {getTranslated(EXPERIENCES)}
+        </div>
+        <div style={{ marginBottom: '80px' }}>
+          {getTimelineEventElement(props.educations)}
+        </div>
+        <div className="exp-title">
+          {getTranslated(CAREER)}
+        </div>
+        {getTimelineEventElement(props.career)}
+        {/* <div style={{ minHeight: '150px' }} /> */}
       </div>
-      <div style={{ marginBottom: '80px' }}>
-        {getTimelineEventElement(props.educations)}
-      </div>
-      <div className="exp-title">
-        {getTranslated(CAREER)}
-      </div>
-      {getTimelineEventElement(props.career)}
-      <div style={{ minHeight: '150px' }} />
-    </Feature>
+    </Content>
   );
 }
 

@@ -1,16 +1,16 @@
 import React from 'react'
 import ProjectGrid from './project_grid'
 import {projects} from '../constants'
-import Feature from './common/feature';
+import Content from './common/content';
 
 function Projects() {
   return (
-    <Feature 
+    <Content 
       title={{it: "Progetti", en: "Projects"}} 
       cit={"Anyone who has lost track of time when using a computer knows the propensity to dream, the urge to make dreams come true and the tendency to miss lunch."} 
       author={"Tim Berners Lee"}>
       <ProjectGrid projects={projects}/> 
-    </Feature>
+    </Content>
   )
 }
 

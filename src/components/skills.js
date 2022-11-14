@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react'
-import Feature from './common/feature'
+import Content from './common/content'
 import { pl, tools } from '../constants'
 import { getTranslated } from '../helper/translater';
 import AOS from 'aos'
@@ -8,7 +8,7 @@ import "aos/dist/aos.css";
 function Skills() {
 
   return (
-    <Feature 
+    <Content 
       title={"Skills"} 
       cit={"Good programmers know what to write. Great ones know what to rewrite"}
       author={"Eric S. Raymond"}
@@ -27,7 +27,7 @@ function Skills() {
         }} 
         skill_list={tools} 
       />
-    </Feature>
+    </Content>
   )
 }
 
@@ -68,36 +68,37 @@ function Skill(props) {
   var skills = [skill_left, skill_right]
 
   return (
-    <div>
+    <div className="flex-column width-sized-margined" style={{justifyContent: 'flex-start'}}>
       <div className="exp-title">
         {getTranslated(props.skill)}
       </div>
-      <div style={{ display: 'flex', justifyContent: 'center', margin: '40px 20px 60px' }}>
-        <div className="row" style={{ width: '100%' }}>
-          {skills.map((s, i) => (
-            <div  
-              key={i}
-              className="col-sm-12 col-md-6">
-              {s.map((e, i) => {
-                return (
-                  <div key={i} className="flex-row horizontal-center record-skill">
-                    <div className="skill">
-                      {e.title}
-                    </div>
-                    <div className="flex-row">
-                      {
-                        displayPoints(e.value, 100)
-                      }
-                      {
-                        displayPoints(5 - e.value, 100, false)
-                      }
-                    </div>
+      <div className="skill-list-main-container" 
+      style={{flexWrap: 'wrap', display: 'flex', justifyContent: 'space-around', alignItems: 'center'}}
+      >
+        {skills.map((s, i) => (
+          <div  
+            key={i}
+            className="skill-list-container"
+            >
+            {s.map((e, i) => {
+              return (
+                <div key={i} className="flex-row horizontal-center record-skill">
+                  <div className="skill">
+                    {e.title}
                   </div>
-                )
-              })}
-            </div>)
-          )}
-        </div>
+                  <div className="flex-row">
+                    {
+                      displayPoints(e.value, 100)
+                    }
+                    {
+                      displayPoints(5 - e.value, 100, false)
+                    }
+                  </div>
+                </div>
+              )
+            })}
+          </div>)
+        )}
       </div>
     </div>
   )

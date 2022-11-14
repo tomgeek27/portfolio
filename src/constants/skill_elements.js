@@ -20,11 +20,11 @@ const pl = [
     value: 5
   },
   {
-    title: 'React-native',
-    value: 4
+    title: 'Python',
+    value: 5
   },
   {
-    title: 'Python',
+    title: 'React-native',
     value: 4
   },
   {

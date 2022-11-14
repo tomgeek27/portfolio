@@ -31,12 +31,12 @@ export default function Header() {
         transform: sticky ? "translateY(0)" : "translateY(-100%)"}}>
         <div style={{
           position: 'absolute',
-          right: '3.5%',
+          right: '2%',
           display: 'flex',
           flexDirection: 'row',
           alignItems: 'center',
         }}>
-          <a style={{height: '40px'}} id="curriculumLink" className="social-icon-external" href='/portfolio/curriculum.pdf'>
+          <a id="curriculumLink" className="social-icon-external" href='/portfolio/AmadoriTommasoCV.pdf'>
             <img id="downloadIcon" alt="" src={downloadlogo}/>
             <div style={{
               fontFamily: 'CoolveticaRg',
@@ -46,13 +46,11 @@ export default function Header() {
               Curriculum
             </div>
           </a>
-          <div style={{marginLeft: '20px', display: 'flex', flexDirection: 'row'}}>
-            <div 
-              className="social-icon-external"
+          <div style={{marginLeft: '20px'}} className="flex-row vertical-center">
+            <div
+              className="lang-icon"
               onClick={() => {setLanguage('it')}}
                 style={{
-                    width: '30px',
-                    height: '40px',
                   cursor: 'pointer',
                   fontFamily: 'CoolveticaRg',
                   fontSize: '16px',
@@ -64,10 +62,8 @@ export default function Header() {
               >IT</div>
               <div style={{margin: '0px 5px'}}/>
               <div onClick={() => {setLanguage('en')}}
-              className="social-icon-external"
+              className="lang-icon"
                 style={{
-                  width: '30px',
-                  height: '40px',
                   display: 'flex',
                   justifyContent: 'center',
                   alignItems: 'center',
@@ -77,7 +73,7 @@ export default function Header() {
                   color: lang === 'en' ? '#707070' : '#70707077'
                 }}
               >EN</div>
-            </div>
+          </div>
         </div>
       </header>    
     )

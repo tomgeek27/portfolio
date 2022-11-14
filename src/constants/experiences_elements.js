@@ -1,9 +1,6 @@
 const educations = [
   {
-    date: {
-      it: '2020 - Presente',
-      en: '2020 - In progress'
-    },
+    date: '2020 - 2022',
     title: {
       it: 'Laurea Magistrale in Informatica',
       en: 'Master\'s degree in Computer Science'

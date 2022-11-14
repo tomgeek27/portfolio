@@ -322,6 +322,8 @@ header {
   font-family: 'CoolveticaRg';
   text-align: left;
   padding-right: 4px;
+  overflow-wrap: break-word;
+  word-break: break-all;
 }
 
 .record-skill {

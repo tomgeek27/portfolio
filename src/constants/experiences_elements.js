@@ -6,6 +6,10 @@ const educations = [
       en: 'Master\'s degree in Computer Science'
     },
     location: 'Università statale degli studi di Milano',
+    description: {
+      it: 'Gli ultimi due anni di studio si sono concentrati su uno sviluppo pratico di diversi progetti basati su diversi framework e linguaggi di programmazione. Si è conclusa con un tirocinio interno di oltre 6 mesi sullo studio, ricerca e sviluppo di un framework scritto in python per la stima della pressione sanguigna a partire da un semplice video-selfie.',
+      en: 'The last two years of unviersity was based on develop a lot of projects using different languages and frameworks. It ended with a internal stage lasting more than six months concentrated on study, research and develop a python framework to estimate remote blood pressure based on a simple video-selfie.'
+    }
   },
   {
     date: '2016 - 2019',

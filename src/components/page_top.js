@@ -8,7 +8,7 @@ import scrolldown from '../assets/imgs/scroll-down.svg'
 import { gh_url, in_url, up_url, mail_url, location, age, email, aboutme} from '../constants'
 import { getTranslated } from '../helper/translater'
 import AOS from 'aos'
-// import "aos/dist/aos.css";
+import "aos/dist/aos.css";
 import Div100vh from 'react-div-100vh'
 
 const ABOUT_ME = {
@@ -62,9 +62,9 @@ function PageTop() {
     me_ref.current.scrollIntoView({behavior: 'smooth', block: 'start'})
   };
 
-  // useEffect(() => {
-  //   AOS.init({})
-  // }, [])
+  useEffect(() => {
+    AOS.init({})
+  }, [])
 
   const {height} = useWindowDimensions()
 
@@ -87,7 +87,7 @@ function PageTop() {
         </div>
       </div>
 
-      <div className="flex-column vertical-center horizontal-center me-container" ref={me_ref}>
+      <div className="flex-column vertical-center horizontal-center me-container" ref={me_ref} style={{overflowX: 'hidden'}}>
         <div className="me-info-container width-sized">
           <div 
             className="me-text-section-container">

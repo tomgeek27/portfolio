@@ -23,6 +23,15 @@ const projects = [
     url: "https://candorlanae.com/"
   },
   {
+    title: 'FaceQs',
+    subtitle: {
+      it: 'Framework Python per stima della pressione sanguigna da remoto',
+      en: 'Python framework to estimate remote blood pressure'
+    },
+    url: "https://github.com/tomgeek27/stima-della-pressione-sanguigna-da-video-mediante-il-framework-FaceQs",
+    avatarColor: 'rgb(98 71 218)'
+  },
+  {
     title: 'CUDA seam carving',
     subtitle: {
       it: 'Algoritmo content-aware per resizing di immagini',

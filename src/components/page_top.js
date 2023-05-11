@@ -79,7 +79,8 @@ function PageTop() {
             Tommaso Amadori
           </div>
           <div className="main-subtitle">
-            /* write, compile, run, sleep */
+            <b> Software Engineer 
+            </b> @ Intesa Sanpaolo
           </div>
         </div>          
         <div className="scroll-down">
